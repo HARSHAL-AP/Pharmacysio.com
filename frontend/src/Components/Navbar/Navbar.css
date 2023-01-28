@@ -1,0 +1,88 @@
+.navbar01 {
+  height: 50px;
+  width: 100%;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbody{
+    width: 90%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
+}
+.logobody {
+  height: 100%;
+  width: 300px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logobody > img {
+  width: 90%;
+}
+
+.acsections01 {
+  width: 400px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  
+}
+.navbtmns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbtnlinks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.subnav{
+    height: 45px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    background-color:#242429;
+    color: #fff;
+}
+.subnav>h2{
+    color: #fff;
+    font-size: 15px;
+    font-weight:400 ;
+}
+.subnav>h2:hover{
+color:#ffffff ;
+}
+.drowermenue{
+    display: none;
+}
+@media screen and (max-width: 780px) {
+    .navlinkheadings{
+        display: none;
+    }
+    .acsections01 {
+        width: 400px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        
+    }
+    .subnav{
+       display: none;
+    }
+    .drowermenue{
+        display:block;
+    }
+}
