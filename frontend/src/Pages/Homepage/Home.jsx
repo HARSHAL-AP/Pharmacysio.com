@@ -2,14 +2,17 @@ import React from "react";
 import "./Home.css";
 import Slider from "react-slick";
 import { Navbar } from "../../Components/Navbar/Navbar";
-import { Slider1 } from "../../Components/Homepage/Slider1";
+import Slider1 from "../../Images/Slide1.png"
+import Slider3 from "../../Images/Slide3.png"
+import Slider4 from "../../Images/Slide4.png"
+import {Link} from "react-router-dom"
 export const Home = () => {
   const settings = {
     dots: false,
- infinite: true,
+    infinite: true,
     speed: 300,
     slidesToShow: 1,
-    //autoplay: true,
+    autoplay: true,
     slidesToScroll: 1,
  
   };
@@ -20,17 +23,24 @@ export const Home = () => {
    
         <Slider {...settings} className="slid">
         
-          <div className="Slide1">
-            
-          </div>
-          <div>
-            <h3>FREE SHIPPING on PREPAID Orders</h3>
-          </div>
-          <div>
-            <h3>USE CODE : MASAI10 TO GET 10% OFF</h3>
-          </div>
+        
+            <img src={Slider1} alt="" className="Slide1"/>
+          
+          
+          <img src={Slider3} alt="" className="Slide1"/>
+          
+          <img src={Slider4} alt="" className="Slide1"/>
+          
         </Slider>
-      
+       <div className="productdetails">
+        <div className="categryhomedi"><Link to="/">Medicine</Link></div>
+        <div className="categryhomedi"><Link to="/">Lab Test</Link></div>
+        <div className="categryhomedi"><Link to="/">Healthcares</Link></div>
+        <div className="categryhomedi"><Link to="/">Fruits & Vegitables</Link></div>
+        <div className="categryhomedi"><Link to="/">Cosmatics</Link></div>
+
+        
+       </div>
     </>
   );
 };
