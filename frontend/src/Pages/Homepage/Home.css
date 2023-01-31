@@ -7,11 +7,10 @@
 }
 .slid {
   width: 85%;
+
   margin: auto;
   margin-top: 50px;
-  height: 450px;
-  background-color: #dbdaf0;
-  color: rgb(17, 31, 77);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +19,24 @@
 }
 .Slide1 {
   width: 100%;
-  height: 450px;
-  background-image: url("../../Images/s1.jpg");
-  background-size: cover;
+  height: 100%;
+}
+
+.productdetails {
+  height: 150px;
+  margin: auto;
+  width: 85%;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+.categryhomedi{
+  width: 20%;
+  height: 100%;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+
 }
