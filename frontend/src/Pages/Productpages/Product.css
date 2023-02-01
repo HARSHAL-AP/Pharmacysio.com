@@ -1,0 +1,56 @@
+.pslid {
+  width: 85%;
+
+  margin: auto;
+  margin-top: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  font-weight: 700;
+}
+
+.pbody {
+  width: 90%;
+  height: 400px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border: 1px solid rgb(231, 231, 231);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.pbheading {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pbh1head {
+  font-size: 22px;
+  font-weight: 600;
+}
+.pbh1head > a {
+   
+padding: 3px 20px 3px 20px ;
+  margin-left: 20px;
+  font-size: 15px;
+background-color: rgb(255, 81, 1);
+ color: aliceblue;
+ border-radius: 2px;
+}
+
+.pbhpp {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(0, 63, 117);
+}
+.pbcontener {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}

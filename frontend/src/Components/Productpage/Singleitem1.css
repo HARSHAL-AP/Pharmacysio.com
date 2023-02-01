@@ -1,0 +1,48 @@
+.conbody {
+  width: 250px;
+  height: 300px;
+  border: 1px solid rgb(230, 230, 230);
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.conbodyimg {
+  width: 55%;
+  height: 158px;
+  margin: auto;
+}
+.conimgcone {
+  width: 80%;
+height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.conheag {
+  font-size: 18px;
+  margin-top: 8px;
+  font-weight: 600;
+  text-align: left;
+  color: rgb(42, 63, 58);
+}
+.mrpcon {
+  font-size: 15px;
+  margin-top: 5px;
+  font-weight: 600;
+  text-align: left;
+  color: rgb(138, 137, 137);
+  text-decoration: line-through;
+}
+.consealp {
+  font-size: 17px;
+  margin-top: 5px;
+  font-weight: 700;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+.consealp > span {
+  color: rgb(255, 121, 121);
+  margin-left: 9px;
+}
