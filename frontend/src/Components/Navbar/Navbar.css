@@ -1,10 +1,13 @@
 .navbar01 {
-  height: 50px;
+  height: 60px;
   width: 100%;
-  
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 1;
 }
 .navbody{
     width: 90%;
@@ -12,7 +15,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
- 
+  
 }
 .logobody {
   height: 100%;
@@ -46,8 +49,9 @@
     justify-content: center;
 }
 .subnav{
-    height: 45px;
+    height: 50px;
     width: 100%;
+    margin-top: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -56,12 +60,15 @@
     color: #fff;
 }
 .subnav>h2{
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 15px;
     font-weight:400 ;
+    
 }
 .subnav>h2:hover{
-color:#ffffff ;
+color:rgb(133, 219, 133) ;
+cursor: pointer;
+border-bottom: 2px solid rgb(133, 219, 133);
 }
 .drowermenue{
     display: none;
