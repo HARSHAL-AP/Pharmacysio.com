@@ -29,7 +29,7 @@ export const Navbar = () => {
       </div>
       <div className="subnav">
       <h2>Medicine</h2>
-      <h2>Lab Test</h2>
+      <Link to="/labtests">Lab Test</Link>
       <h2>Track Your Health</h2>
       <h2>Farmer Products</h2>
       <h2>Cosmatics</h2>

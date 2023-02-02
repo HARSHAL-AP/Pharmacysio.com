@@ -44,7 +44,7 @@ export const Home = () => {
             alt=""
             className="cateiconimg-9"
           />
-          <Link to="/">Lab Test</Link>
+          <Link to="/labtests">Lab Test</Link>
         </div>
         <div className="categryhomedi">
           <img

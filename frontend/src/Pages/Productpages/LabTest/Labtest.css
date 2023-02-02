@@ -1,0 +1,30 @@
+.Labtestheading{
+    font-size: 24px;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 10%;
+    font-weight: 600;
+}
+.Selectlocbox{
+    width: 85%;
+    height: 400px;
+    margin: auto;
+    margin-top: 35px;
+  
+}
+.alltests{
+    width:60%;
+    padding: 20px;
+    gap: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    margin: auto;
+    margin-top: 35px;
+   
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.subhelat{
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 700;
+}
