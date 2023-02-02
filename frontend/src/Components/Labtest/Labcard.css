@@ -1,0 +1,52 @@
+.labcarbody{
+    width: 100%;
+    height: 150px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+ justify-content: space-around;
+ box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+
+.imgltd{
+    width: 10%;
+    display: flex;
+    align-items: center;
+ justify-content: center;
+}
+.imgltd>img{
+    width: 100%;
+   
+}
+.subtext{
+    width: 80%;
+    text-align: left;
+}
+.subtext>h1{
+   font-size: 22px;
+   font-weight: 600;
+    text-align: left;
+    margin-left: 20px;
+}
+.subtext>p{
+    font-size: 20px;
+    font-weight: 500;
+     text-align: left;
+     margin-left: 20px;
+ }
+ .subtext>button{
+    padding: 5px;
+    width: 50%;
+    font-size: 20px;
+    font-weight: 500;
+    margin:auto;
+    margin-left: 20px;
+    margin-top: 20px;
+     border: none;
+     border-radius: 5px;
+     color: aliceblue;
+     background-color: rgb(100, 49, 110);
+ }

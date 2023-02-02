@@ -6,6 +6,9 @@ import {Product} from "../Pages/Productpages/Product"
 import {SIgnup} from "../Pages/Signup/SIgnup"
 import {Wishlist} from "../Pages/wishlist/Wishlist"
 import {Cart} from "../Pages/cart/Cart"
+import { Labtest } from '../Pages/Productpages/LabTest/Labtest'
+import { Singletest } from '../Pages/Productpages/LabTest/Singletest'
+
 export const Allroute = () => {
   return (
     <>
@@ -15,6 +18,8 @@ export const Allroute = () => {
     <Route path="/signup" element={<SIgnup/>}/>
     <Route path="/wishlist" element={<Wishlist/>}/>
     <Route path="/product" element={<Product/>}/>
+    <Route path="/labtests" element={<Labtest/>}/>
+    <Route path="/labtests/:id" element={<Singletest/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/cart" element={<Cart/>}/>
 
