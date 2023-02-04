@@ -1,0 +1,61 @@
+
+.mainheadingofpage{
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 25px;
+    text-align: left;
+    margin-left: 25%;
+}
+
+.mainbody{
+    width: 80%;
+    
+    margin: auto;
+    margin-top:50px ;
+    display: flex;
+   
+}
+.filbody{
+    width: 20%;
+    height: 500px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+   padding: 10px;
+   
+    
+}
+
+
+.filcatebody{
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+.fillcatheadin12{
+    text-align: left;
+    font-size: 18px;
+}
+.fillin876{
+    width: 100%;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(85, 85, 85);
+}
+.fillin876>div{
+    height:35px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.probody{
+    width: 80%;
+  
+    margin: auto;
+   
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px
+
+}
