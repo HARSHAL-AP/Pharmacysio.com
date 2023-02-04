@@ -311,7 +311,7 @@ export const Product = () => {
           <h1 className="pbh1head">
             Deals of the Day <a>12:59 MINS LEFT HURRY!</a>
           </h1>
-          <p className="pbhpp">View All</p>
+          <Link to="/covidessential" className="pbhpp">View All</Link>
         </div>
         <Slider {...productsetings} className="pbcontener" >
           {data.map((el, index) => {
@@ -322,7 +322,7 @@ export const Product = () => {
       <div className="pbody">
         <div className="pbheading">
           <h1 className="pbh1head">COVID Essentials </h1>
-          <p className="pbhpp">View All</p>
+          <Link to="/covidessential" className="pbhpp">View All</Link>
         </div>
         <Slider {...productsetings} className="pbcontener">
           {covid.map((el, index) => {
@@ -332,8 +332,8 @@ export const Product = () => {
       </div>
       <div className="pbody">
         <div className="pbheading">
-          <h1 className="pbh1head">Ayurvedic </h1>
-          <p className="pbhpp">View All</p>
+          <h1 className="pbh1head">Skin Care </h1>
+          <Link to="/skincare" className="pbhpp">View All</Link>
         </div>
         <Slider {...productsetings} className="pbcontener">
           {dibetic.map((el, index) => {
@@ -343,8 +343,8 @@ export const Product = () => {
       </div>
       <div className="pbody">
         <div className="pbheading">
-          <h1 className="pbh1head">Mom & Baby care </h1>
-          <p className="pbhpp">View All</p>
+          <h1 className="pbh1head">Dibetic care </h1>
+          <Link to="/dibetics" className="pbhpp">View All</Link>
         </div>
         <Slider {...productsetings} className="pbcontener">
           {data.map((el, index) => {

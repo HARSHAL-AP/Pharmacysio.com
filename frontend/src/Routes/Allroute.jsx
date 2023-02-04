@@ -8,6 +8,11 @@ import {Wishlist} from "../Pages/wishlist/Wishlist"
 import {Cart} from "../Pages/cart/Cart"
 import { Labtest } from '../Pages/Productpages/LabTest/Labtest'
 import { Singletest } from '../Pages/Productpages/LabTest/Singletest'
+import { Covidessential } from '../Pages/Productpages/Allcategorys/Covidessential'
+import { Skincare } from '../Pages/Productpages/Allcategorys/Skincare'
+import { Dibetics } from '../Pages/Productpages/Allcategorys/Dibetics'
+import { Heathyfood } from '../Pages/Productpages/Allcategorys/Heathyfood'
+import {Singleproduct} from "../Pages/Productpages/Singleproduct/Singleproduct"
 
 export const Allroute = () => {
   return (
@@ -18,6 +23,11 @@ export const Allroute = () => {
     <Route path="/signup" element={<SIgnup/>}/>
     <Route path="/wishlist" element={<Wishlist/>}/>
     <Route path="/product" element={<Product/>}/>
+    <Route path="/covidessential" element={<Covidessential/>}/>
+    <Route path="/skincare" element={<Skincare/>}/>
+    <Route path="/dibetics" element={<Dibetics />}/>
+    <Route path="/heathyfood" element={<Heathyfood />}/>
+    <Route path="/Singleproduct/:id" element={<Singleproduct />}/>
     <Route path="/labtests" element={<Labtest/>}/>
     <Route path="/labtests/:id" element={<Singletest/>}/>
     <Route path="/login" element={<Login/>}/>
