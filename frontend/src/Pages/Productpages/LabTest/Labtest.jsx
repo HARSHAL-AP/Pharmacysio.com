@@ -218,7 +218,7 @@ export const Labtest = () => {
     {data.map((el, index) => {
             return <LabCard key={index} elem={el} />;
           })}
-      <LabCard/>
+      
     </div>
     <Fotter/>
     </>

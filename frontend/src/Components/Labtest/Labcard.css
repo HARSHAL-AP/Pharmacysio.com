@@ -26,21 +26,21 @@
     text-align: left;
 }
 .subtext>h1{
-   font-size: 22px;
+   font-size: 16px;
    font-weight: 600;
     text-align: left;
     margin-left: 20px;
 }
 .subtext>p{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 500;
      text-align: left;
      margin-left: 20px;
  }
  .subtext>button{
     padding: 5px;
-    width: 50%;
-    font-size: 20px;
+    width: 40%;
+    font-size: 16px;
     font-weight: 500;
     margin:auto;
     margin-left: 20px;
