@@ -12,245 +12,167 @@ import { Singleitem1 } from "../../Components/Productpage/Singleitem1";
 import { Fotter } from "../../Components/Fotter/Fotter";
 const covid = [
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/199694/crocin-cold-flu-tab-12s-2-1671740877.jpg",
-    title: "Crocin Cold Flu Tab 12's",
-    saleprice: 60.31,
-    category: "covidessensials",
-    price: 144,
-    discount: 40,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/I04110/cofsils-orange-lozenges-strip-of-10-2-1669655050.jpg",
+    "title": "Cofsils Orange Lozenges Strip Of 10",
+    "saleprice": 28,
+    "price": 33,
+    "discount": 15,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 3
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/N65745/beco-natural-floor-liquid-500-ml-baby-pets-safe-2-1644239801.jpg",
-    title: "Beco Natural Floor Liquid 500 Ml- Baby & Pets Safe",
-    saleprice: 86.4,
-    category: "covidessensials",
-    price: 144,
-    discount: 40,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/181135/vicks-vaporub-25ml-relief-from-cold-cough-headache-and-body-pain-2-1669655043.jpg",
+    "title": "Vicks Vaporub 25ml Relief From Cold Coug...",
+    "saleprice": 90,
+    "price": 90,
+    "discount": 0,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 0
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/Q83701/pharmeasy-all-in-one-vaporizer-1-1654233812.jpg",
-    title: "Pharmeasy All-in -one Vaporizer",
-    saleprice: 269.55,
-    category: "covidessensials",
-    price: 599,
-    discount: 55,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/181140/vicks-vaporub-50ml-relief-from-cold-cough-headache-and-body-pain-2-1669655242.jpg",
+    "title": "Vicks Vaporub 50ml Relief From Cold Coug...",
+    "saleprice": 115,
+    "price": 155,
+    "discount": 0,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 4
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/F27588/bbb-better-body-bombay-tea-tree-kaffir-lime-cleansing-hand-wash-moisturizing-300ml-2-1672132947.jpg",
-    title: "Bbb Better Body Bombay Tea Tree & Kaffir...",
-    saleprice: 350,
-    category: "covidessensials",
-    price: 500,
-    discount: 40,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/282039/cofsils-ginger-lemon-lozenges-strip-of-10-2-1671740849.jpg",
+    "title": "Cofsils Ginger Lemon Lozenges Strip Of 10",
+    "saleprice": 28,
+    "price": 33,
+    "discount": 15,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 0
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/E62677/bbb-better-body-bombay-lavender-chamomile-calming-hand-wash-moisturizing-300ml-2-1672132312.jpg",
-    title: "Bbb Better Body Bombay Lavender & Chamom...",
-    saleprice: 350,
-    category: "covidessensials",
-    price: 600,
-    discount: 40,
-  },
-];
-const skincare = [
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/Y27819/lotus-professional-phyto-rx-whitening-brightening-face-wash-80-gm-2-1671742418.jpg",
-    title: "Lotus Professional Phyto-rx Whitening & ...",
-    saleprice: 400.95,
-    catagory: "skincare",
-    price: 495,
-    discount: 19,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/G30601/vicks-roll-on-inhaler-2-in-1-relief-for-headache-and-blocked-nose-2-1672394457.jpg",
+    "title": "Vicks Roll On Inhaler 2 In 1 Relief For ...",
+    "saleprice": 88,
+    "price": 89,
+    "discount": 1,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 1
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/M92376/lotus-herbals-cocomoist-moisturising-lotion-80-ml-2-1641793386.jpg",
-    title: "Lotus Herbals Cocomoist Moisturising Lotion 80 Ml",
-    saleprice: 255.15,
-    catagory: "skincare",
-    price: 315,
-    discount: 19,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/I07006/vicks-vaporub-110ml-relief-from-cold-cough-headache-and-body-pain-2-1669635048.jpg",
+    "title": "Vicks Vaporub 110ml Relief From Cold Cou...",
+    "saleprice": 265,
+    "price": 189,
+    "discount": 0,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 3
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/J22011/everyuth-naturals-body-lotion-rejuvenating-flora-200ml-2-1671742886.jpg",
-    title: "Everyuth Naturals Body Lotion Rejuvenati...",
-    saleprice: 170,
-    catagory: "skincare",
-    price: 250,
-    discount: 32,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/100341/himalaya-koflet-h-lozenges-ginger-flavour-6s-2-1671740909.jpg",
+    "title": "Himalaya Koflet H Lozenges Ginger Flavour - 6's",
+    "saleprice": 35,
+    "price": 36,
+    "discount": 1,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 0
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/E65375/himalaya-clarina-anti-acne-kit-2-1641789198.jpg",
-    title: "Himalaya Clarina  Anti Acne Kit",
-    saleprice: 79.2,
-    catagory: "skincare",
-    price: 110,
-    discount: 28,
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/F96276/lotus-herbals-wg-day-and-night-kit-with-wg-fash-wash-220-gm-2-1641793008.jpg",
-    title: "Lotus Herbals Wg Day And Night Kit With ...",
-    saleprice: 704.7,
-    catagory: "skincare",
-    price: 870,
-    discount: 19,
-  },
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/I41299/amrutanjan-relief-nasal-inhaler-075g-2-1669711181.jpg",
+    "title": "Amrutanjan Relief Nasal Inhaler - 0.75g",
+    "saleprice": 42,
+    "price": 45,
+    "discount": 5,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 2
+  }
 ];
 const dibetic = [
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/J04083/praakritik-organic-coconut-sugar-300-g-2-1671745382.jpg",
-    title: "Praakritik Organic Coconut Sugar 300 G",
-    saleprice: 360,
-    category: "dibetic",
-    price: 1140,
-    discount: 57,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/I04110/cofsils-orange-lozenges-strip-of-10-2-1669655050.jpg",
+    "title": "Cofsils Orange Lozenges Strip Of 10",
+    "saleprice": 28,
+    "price": 33,
+    "discount": 15,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 3
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/W41443/herbal-hills-diabohills-value-pack-900-tabs-pack-of-2-2-1665636037.jpg",
-    title: "Herbal Hills Diabohills - Value Pack 900...",
-    saleprice: 5092,
-    price: 6700,
-    discount: 24,
-    category: "dibetic",
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/181135/vicks-vaporub-25ml-relief-from-cold-cough-headache-and-body-pain-2-1669655043.jpg",
+    "title": "Vicks Vaporub 25ml Relief From Cold Coug...",
+    "saleprice": 90,
+    "price": 90,
+    "discount": 0,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 0
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/A89701/grazing-meadows-methi-seed-powder-1-kg-pack-of-2-2-1665651931.jpg",
-    title: "Grazing Meadows Methi Seed Powder - 1 Kg...",
-    saleprice: 1520,
-    category: "dibetic",
-    price: 1140,
-    discount: 57,
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/181140/vicks-vaporub-50ml-relief-from-cold-cough-headache-and-body-pain-2-1669655242.jpg",
+    "title": "Vicks Vaporub 50ml Relief From Cold Coug...",
+    "saleprice": 115,
+    "price": 155,
+    "discount": 0,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 4
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/D22743/liveasy-essentials-diabetic-orthopedic-brown-slipper-men-size-uk-11-2-1671742365.jpg",
-    title: "Liveasy Essentials Diabetic & Orthopedic...",
-    saleprice: 519.48,
-    price: 999,
-    discount: 48,
-    category: "dibetic",
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/282039/cofsils-ginger-lemon-lozenges-strip-of-10-2-1671740849.jpg",
+    "title": "Cofsils Ginger Lemon Lozenges Strip Of 10",
+    "saleprice": 28,
+    "price": 33,
+    "discount": 15,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 0
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/H17123/pharmeasy-diabetic-orthopedic-women-slippers-fahion-range-1-black-color-size-8-2-1671743079.jpg",
-    title: "Pharmeasy Diabetic & Orthopedic Women Sl...",
-    saleprice: 604.45,
-    price: 1099,
-    discount: 45,
-    category: "dibetic",
-  },
-];
-const data = [
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/U88823/true-elements-instant-oats-900gm-2-1672734947.jpg",
-    title: "True Elements Instant Oats 900gm",
-    saleprice: 185.25,
-    price: 195,
-    discount: 5,
-    category: "healtyfood",
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/G30601/vicks-roll-on-inhaler-2-in-1-relief-for-headache-and-blocked-nose-2-1672394457.jpg",
+    "title": "Vicks Roll On Inhaler 2 In 1 Relief For ...",
+    "saleprice": 88,
+    "price": 89,
+    "discount": 1,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 1
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/Y04048/true-elements-fruits-and-nuts-muesli-1200gm-2-1672734453.jpg",
-    title: "True Elements Fruits And Nuts Muesli 1200gm",
-    saleprice: 640.8,
-    price: 720,
-    discount: 11,
-    category: "healtyfood",
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/I07006/vicks-vaporub-110ml-relief-from-cold-cough-headache-and-body-pain-2-1669635048.jpg",
+    "title": "Vicks Vaporub 110ml Relief From Cold Cou...",
+    "saleprice": 265,
+    "price": 189,
+    "discount": 0,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 3
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/Z38551/bodyfirst-peanut-butter-chocolate-crunchy-510-grm-6.4-1674109190.jpg",
-    title: "Bodyfirst Peanut Butter Chocolate Crunchy 510 Grm",
-    saleprice: 319.2,
-    price: 399,
-    discount: 20,
-    category: "healtyfood",
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/100341/himalaya-koflet-h-lozenges-ginger-flavour-6s-2-1671740909.jpg",
+    "title": "Himalaya Koflet H Lozenges Ginger Flavour - 6's",
+    "saleprice": 35,
+    "price": 36,
+    "discount": 1,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 0
   },
   {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/G67281/grazing-meadows-trimovedic-60-tablets-ayurvedic-herbal-supplement-for-weight-management-pack-of-5-2-1671744317.jpg",
-    title: "Grazing Meadows Trimovedic 60 Tablets - ...",
-    saleprice: 2655,
-    price: 2950,
-    discount: 10,
-    category: "healtyfood",
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/W20442/grazing-meadows-trimovedic-900-tablets-natural-supplement-for-weight-management-pack-of-4-2-1671743467.jpg",
-    title: "Grazing Meadows Trimovedic 900 Tablets |...",
-    saleprice: 26092.8,
-    price: 28992,
-    discount: 10,
-    category: "healtyfood",
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/G67281/grazing-meadows-trimovedic-60-tablets-ayurvedic-herbal-supplement-for-weight-management-pack-of-5-2-1671744317.jpg",
-    title: "Grazing Meadows Trimovedic 60 Tablets - ...",
-    saleprice: 2655,
-    price: 2950,
-    discount: 10,
-    category: "healtyfood",
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/W20442/grazing-meadows-trimovedic-900-tablets-natural-supplement-for-weight-management-pack-of-4-2-1671743467.jpg",
-    title: "Grazing Meadows Trimovedic 900 Tablets |...",
-    saleprice: 26092.8,
-    price: 28992,
-    discount: 10,
-    category: "healtyfood",
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/G67281/grazing-meadows-trimovedic-60-tablets-ayurvedic-herbal-supplement-for-weight-management-pack-of-5-2-1671744317.jpg",
-    title: "Grazing Meadows Trimovedic 60 Tablets - ...",
-    saleprice: 2655,
-    price: 2950,
-    discount: 10,
-    category: "healtyfood",
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/W20442/grazing-meadows-trimovedic-900-tablets-natural-supplement-for-weight-management-pack-of-4-2-1671743467.jpg",
-    title: "Grazing Meadows Trimovedic 900 Tablets |...",
-    saleprice: 26092.8,
-    price: 28992,
-    discount: 10,
-    category: "healtyfood",
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/G67281/grazing-meadows-trimovedic-60-tablets-ayurvedic-herbal-supplement-for-weight-management-pack-of-5-2-1671744317.jpg",
-    title: "Grazing Meadows Trimovedic 60 Tablets - ...",
-    saleprice: 2655,
-    price: 2950,
-    discount: 10,
-    category: "healtyfood",
-  },
-  {
-    image:
-      "https://cdn01.pharmeasy.in/dam/products_otc/W20442/grazing-meadows-trimovedic-900-tablets-natural-supplement-for-weight-management-pack-of-4-2-1671743467.jpg",
-    title: "Grazing Meadows Trimovedic 900 Tablets |...",
-    saleprice: 26092.8,
-    price: 28992,
-    discount: 10,
-    category: "healtyfood",
-  },
+    "image": "https://cdn01.pharmeasy.in/dam/products_otc/I41299/amrutanjan-relief-nasal-inhaler-075g-2-1669711181.jpg",
+    "title": "Amrutanjan Relief Nasal Inhaler - 0.75g",
+    "saleprice": 42,
+    "price": 45,
+    "discount": 5,
+    "category": "covideesential",
+    "subcategory": "coldandcough",
+    "rating": 2
+  }
 ];
 export const Product = () => {
   const settings = {
@@ -314,7 +236,7 @@ export const Product = () => {
           <Link to="/covidessential" className="pbhpp">View All</Link>
         </div>
         <Slider {...productsetings} className="pbcontener" >
-          {data.map((el, index) => {
+          {covid.map((el, index) => {
             return <Singleitem1 key={index} obj={el} />;
           })}
         </Slider>
@@ -347,7 +269,7 @@ export const Product = () => {
           <Link to="/dibetics" className="pbhpp">View All</Link>
         </div>
         <Slider {...productsetings} className="pbcontener">
-          {data.map((el, index) => {
+          {covid.map((el, index) => {
             return <Singleitem1 key={index} obj={el} />;
           })}
         </Slider>
@@ -358,7 +280,7 @@ export const Product = () => {
           <p className="pbhpp">View All</p>
         </div>
         <Slider {...productsetings} className="pbcontener">
-          {data.map((el, index) => {
+          {covid.map((el, index) => {
             return <Singleitem1 key={index} obj={el} />;
           })}
         </Slider>
