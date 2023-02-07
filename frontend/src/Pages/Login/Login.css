@@ -1,22 +1,225 @@
-.loginbtn{
-  width: 80%;
-  height: 600px;
-  margin: auto;
- 
- margin-top: 50px;
- margin-bottom: 50px;
- display: flex;
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+
+
+.context {
+    width: 70%;
+    height: 80vh;
+    border-radius:5px;
+    position: absolute;
+    top: 10vh;
+    left: 15%;
+   display: flex;
+    background-color: #ffffff;
+    z-index: 1;
+    
 }
-.loginadd{
-    width: 60%;
-    height: 600px;
-    background-image: url("../../Images/s1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+.contexadd{
+    width: 50%;
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8fae5;
+
+}
+.contexadd>img{
+    width: 50%;
+  
+}
+.conextconterlogin{
+  width: 50%;
+  height: 100%;
+  background-color: #083805;
+}
+.loglogo{
+ width: 30%;
+ margin-left:70% ;
+}
+.welheadign{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-top: 25px;
+    color: #ffffff;
+}
+.enterdtails{
+    
+    color: #ffffff;
 }
 
-.llognibody{
-    width: 40%;
-    height: 600px;
-    border: 1px solid rgb(112, 112, 112);
+.inputconter{
+width: 80%;
+display: block;
+margin: auto;
+margin-top: 25px;
+padding-bottom: 25px;
+
+}
+.contexinput{
+    width: 90%;
+    height: 35px;
+    margin-top: 25px;
+    padding-left: 10px;
+    border: 0;
+    border-radius: 5px;
+    
+    color: #000000;
+    background-color:#ffffffd0 ;
+}
+.contexinput::placeholder{
+    
+    color: #000000;
+    
+}
+.lginbtn{
+    height:33px;
+    width: 90%;
+    background-color: #0ceb56;
+    color: #424242;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.forgotp{
+    color: #f0f0f0;
+    font-size: 12px;
+    text-align: right;
+    margin-right: 25px;
+    margin-top: 10px;
+}
+.dnhac{
+    color: #f0f0f0;
+}
+.siglink{
+    color: #0cebc6;
+    font-size: 15px
+}   
+
+
+
+
+
+.area{
+    background:rgb(133, 219, 133);  
+    background: -webkit-linear-gradient(to left, #64ff6b, #56c84e);  
+    width: 100%;
+    height:100vh;
+    
+   
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.579);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
 }
