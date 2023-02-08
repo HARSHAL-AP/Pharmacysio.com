@@ -6,17 +6,17 @@ export const loginuser = (data) => (dispatch) => {
     type: types.USER_LOGIN_REQUEST,
   });
   return axios
-    .post(`https://average-lime-wildebeest.cyclic.app/login`, data)
+    .post(`https://average-lime-wildebeest.cyclic.app/user/login`, data)
     .then((r) => {
       dispatch({
-        types: types.USER_LOGIN_SUCCESS,
+        type: types.USER_LOGIN_SUCCESS,
         payload: r.data,
       });
     })
     .catch((e) => {
       console.log(e);
       dispatch({
-        types: types.USER_LOGIN_FAILURE,
+        type: types.USER_LOGIN_FAILURE,
       });
     });
 };
