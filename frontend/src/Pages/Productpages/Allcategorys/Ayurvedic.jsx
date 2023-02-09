@@ -13,7 +13,7 @@ export const Ayurvedic = () => {
     const location=useLocation()
     const [searchParams]=useSearchParams()
     const product=useSelector((store)=>store.Productreducer.products)
-    
+    console.log("1+1")
     useEffect(()=>{
      if(location||product.length===0){
       const getProductParams={
