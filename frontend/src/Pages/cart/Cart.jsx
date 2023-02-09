@@ -85,7 +85,7 @@ export const Cart = () => {
               <h1>SubTotal</h1>
               <h1>₹{total}</h1>
             </div>
-            <div className="palceorderbtn87" onClick={() => navigate("/")}>
+            <div className="palceorderbtn87" onClick={() => navigate("/payment")}>
               Place Order
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from "react";
 import "./Product.css";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import Slider from "react-slick";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import psl1 from "../../Images/psl1.jpg";
 import psl2 from "../../Images/psl2.jpg";
 import psl3 from "../../Images/psl3.jpg";
@@ -175,6 +175,7 @@ const dibetic = [
   }
 ];
 export const Product = () => {
+  const navigate=useNavigate()
   const settings = {
     dots: false,
     infinite: true,
@@ -277,7 +278,7 @@ export const Product = () => {
       <div className="pbody">
         <div className="pbheading">
           <h1 className="pbh1head">Personal Care</h1>
-          <p className="pbhpp">View All</p>
+          <Link to="/personalcare" className="pbhpp">View All</Link>
         </div>
         <Slider {...productsetings} className="pbcontener">
           {covid.map((el, index) => {
@@ -286,50 +287,50 @@ export const Product = () => {
         </Slider>
       </div>
       <div className="allcategorysec">
-        <div className="catcontemmain98">
+        <div className="catcontemmain98" onClick={()=>navigate("/covidessential")}>
           <img
             src="https://cdn-icons-png.flaticon.com/512/2968/2968941.png"
             alt=""
           />
           <h1>Covid Essentials</h1>
         </div>
-        <div className="catcontemmain98"><img
+        <div className="catcontemmain98" onClick={()=>navigate("/personalcare")}><img
             src="https://cdn-icons-png.flaticon.com/512/4320/4320372.png"
             alt=""
           />
           <h1>Personal Care</h1></div>
-        <div className="catcontemmain98"><img
+        <div className="catcontemmain98" onClick={()=>navigate("/homecare")}><img
             src="https://cdn-icons-png.flaticon.com/512/7572/7572006.png"
             alt=""
           />
           <h1>Home Care</h1></div>
-        <div className="catcontemmain98"><img
+        <div className="catcontemmain98" onClick={()=>navigate("/motherandbaby")}><img
             src="https://cdn-icons-png.flaticon.com/512/6381/6381743.png"
             alt=""
           />
           <h1>Mother & Baby care</h1></div>
-        <div className="catcontemmain98"><img
+        <div className="catcontemmain98" onClick={()=>navigate("/heathyfood")}><img
             src="https://cdn-icons-png.flaticon.com/512/2756/2756708.png"
             alt=""
           />
           <h1>Healty Food & Drinks</h1></div>
-        <div className="catcontemmain98"><img
+        <div className="catcontemmain98" onClick={()=>navigate("/skincare")}><img
             src="https://cdn-icons-png.flaticon.com/512/8166/8166781.png"
             alt=""
           />
           <h1>Skin care</h1></div>
-        <div className="catcontemmain98"><img
+        <div className="catcontemmain98" onClick={()=>navigate("/ayurvedic")}><img
             src="https://cdn-icons-png.flaticon.com/512/6328/6328740.png"
             alt=""
           />
           <h1>Ayurvedics</h1></div>
 
-          <div className="catcontemmain98"><img
+          <div className="catcontemmain98" onClick={()=>navigate("/sexualwellness")}><img
             src="https://cdn-icons-png.flaticon.com/512/4741/4741200.png"
             alt=""
           />
           <h1>Sexual Wellness</h1></div>
-          <div className="catcontemmain98"><img
+          <div className="catcontemmain98" onClick={()=>navigate("/dibetics")}><img
             src="https://cdn-icons-png.flaticon.com/512/4228/4228683.png"
             alt=""
           />

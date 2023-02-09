@@ -13,7 +13,12 @@ import { Skincare } from '../Pages/Productpages/Allcategorys/Skincare'
 import { Dibetics } from '../Pages/Productpages/Allcategorys/Dibetics'
 import { Heathyfood } from '../Pages/Productpages/Allcategorys/Heathyfood'
 import {Singleproduct} from "../Pages/Productpages/Singleproduct/Singleproduct"
-
+import Payment from "../Pages/Paymentpage/Payment"
+import { Sexualwellness } from '../Pages/Productpages/Allcategorys/Sexualwellness'
+import { Ayurvedic } from '../Pages/Productpages/Allcategorys/Ayurvedic'
+import { Motherandbaby } from '../Pages/Productpages/Allcategorys/Mother&baby'
+import { Homecare } from '../Pages/Productpages/Allcategorys/Homecare'
+import { Personalcare } from '../Pages/Productpages/Allcategorys/Pesonalcare'
 export const Allroute = () => {
   return (
     <>
@@ -32,7 +37,12 @@ export const Allroute = () => {
     <Route path="/labtests/:id" element={<Singletest/>}/>
     <Route path="/login" element={<Login/>}/>
     <Route path="/cart" element={<Cart/>}/>
-
+    <Route path="/payment" element={<Payment/>}/>
+    <Route path="/sexualwellness" element={<Sexualwellness/>}/>
+    <Route path="/ayurvedic" element={<Ayurvedic/>}/>
+    <Route path="/motherandbaby" element={<Motherandbaby/>}/>
+    <Route path="/homecare" element={<Homecare/>}/>
+    <Route path="/personalcare" element={<Personalcare/>}/>
     </Routes>
     </>
     
