@@ -8,7 +8,7 @@ import { FaStar } from "react-icons/fa";
 
 export const Singleproduct = () => {
   const [data, setdata] = useState({});
-  const {count,setcount}=useState(0)
+  const [Count,setCount]=useState(1)
   let { id } = useParams();
   useEffect(() => {
     axios
@@ -39,15 +39,15 @@ export const Singleproduct = () => {
           </div>
 
           <h1 className="salpirce">
-            ₹{data.saleprice} <span>(Inclusive of all taxes )</span>
+            ₹{data.saleprice||data.Saleprice} <span>(Inclusive of all taxes )</span>
           </h1>
           <div className="discountoff">
           <h1 className="mrpprice">MRP ₹ {data.price} </h1><span>{data.discount} % OFF</span>
             </div>
          <div className="qtyadjuster">
-          <button onClick={()=>setcount(count+1)}>+</button>
-          <p>{count}</p>
-          <button onClick={()=>setcount(count-1)}>-</button>
+          <button onClick={()=>setCount(Count+1)}>+</button>
+          <p>{Count}</p>
+          <button onClick={()=>setCount(Count-1)} disabled={Count == 1 ? true : false}>-</button>
          </div>
           <button className="addtocartbtn">Add To Cart</button>
         </div>

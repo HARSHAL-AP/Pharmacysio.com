@@ -1,16 +1,17 @@
 import React from "react";
 import "./Navbar.css";
 import Logo from "../../Images/Logo.png";
-import { Link } from "react-router-dom";
+import { Link,useNavigate } from "react-router-dom";
 import {AiOutlineShopping,AiOutlineEnvironment,AiOutlineHeart,AiOutlineUser,AiOutlineMenu} from "react-icons/ai"
 
 export const Navbar = () => {
+  const navigate=useNavigate()
   return (
     <>
       <div className="navbar01">
         <div className="navbody">
           <div className="logobody">
-            <img src={Logo} alt="" />
+            <img src={Logo} alt="" onClick={()=>navigate("/")}/>
           </div>
           <div className="acsections01">
             <button className="navbtmns"><AiOutlineEnvironment/><h2 className="navlinkheadings">Get Location</h2></button>

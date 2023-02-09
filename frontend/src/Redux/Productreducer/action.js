@@ -4,11 +4,11 @@ import axios from "axios";
 
 
 
-export const getProduct = () => (dispatch) => {
+export const getProduct = (qparams) => (dispatch) => {
   dispatch({ type: types.GET_PRODUCT_DATA_REQUEST });
-
+ console.log(qparams)
   return axios
-    .get(`https://average-lime-wildebeest.cyclic.app/product/data?`)
+    .get(`${process.env.REACT_APP_APILINK}/product/data`,{params:qparams.parmas})
     .then((r) => {
       dispatch({
         type: types.GET_PRODUCT_DATA_SUCCESS,

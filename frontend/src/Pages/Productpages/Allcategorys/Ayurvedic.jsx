@@ -8,7 +8,7 @@ import {Singleitem1} from "../../../Components/Productpage/Singleitem1"
 import { useLocation,useSearchParams } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux/es/exports";
 
-export const Dibetics = () => {
+export const Ayurvedic = () => {
     const dispatch=useDispatch()
     const location=useLocation()
     const [searchParams]=useSearchParams()
@@ -18,7 +18,7 @@ export const Dibetics = () => {
      if(location||product.length===0){
       const getProductParams={
         parmas:{
-          category:"diabetic_care",
+          category:"ayurveduc_care",
           sort:searchParams.get("sort"),
           price:searchParams.get("price")  
         }
@@ -36,7 +36,7 @@ export const Dibetics = () => {
   return (
     <>
       <Navbar />
-      <h1 className="mainheadingofpage">Dibetic Care</h1>
+      <h1 className="mainheadingofpage">Ayurvedic care</h1>
       <div className="mainbody">
         <Filter/>
         <div className="probody">
