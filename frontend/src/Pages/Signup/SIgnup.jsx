@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Signup.css";
 import Logo from "../../Images/Logo.png";
 import signuppr from "../../Images/signuppr.jpg";
@@ -6,50 +6,42 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
 export const SIgnup = () => {
-  const navigate=useNavigate()
+  const navigate = useNavigate();
   const [user, setuser] = useState({
-    name: "",
     email: "",
-    pass: "",
+    password: "",
+    first_name: "",
+    last_name: "",
     gender: "",
-    Address: "",
-    mobailno: "",
-    orders: "",
-    ocupation: "",
+   
+    address: {},
+    phone_number: "",
+   
   });
-  const[sucsess,setsucsess]=useState(false)
+  const [sucsess, setsucsess] = useState(false);
 
   const Handlesubmit = () => {
     console.log(user);
     axios
-      .post(`https://average-lime-wildebeest.cyclic.app/user/register`, user)
+      .post(`${process.env.REACT_APP_APILINK}/user/register`, user)
       .then((r) => {
-        
-          setsucsess(true)
-          
-        
+        setsucsess(true);
       })
-      .then(()=>shosucsess())
+      .then(() => shosucsess())
       .catch((e) => {
         console.log(e);
       });
   };
-  const Handlenavigate=()=>{
-
-    setsucsess(false)
-     navigate("/login")
-   
-  }
- const shosucsess=()=>{
-if(sucsess){
-  document.getElementById("contextd").style.display="none";
-  document.getElementById("sucsessd").style.display="block";
-}
- 
-  
- }
- 
-
+  const Handlenavigate = () => {
+    setsucsess(false);
+    navigate("/login");
+  };
+  const shosucsess = () => {
+    if (sucsess) {
+      document.getElementById("contextd").style.display = "none";
+      document.getElementById("sucsessd").style.display = "block";
+    }
+  };
 
   return (
     <>
@@ -78,8 +70,8 @@ if(sucsess){
               type="text"
               className="contexinput"
               placeholder="Enter Username"
-              value={user.name}
-              onChange={(e) => setuser({ ...user, name: e.target.value })}
+              value={user.first_name}
+              onChange={(e) => setuser({ ...user, first_name: e.target.value })}
             />
             <input
               type="email"
@@ -92,15 +84,15 @@ if(sucsess){
               type="mobailnumber"
               className="contexinput"
               placeholder="Mobail No"
-              value={user.mobailno}
-              onChange={(e) => setuser({ ...user, mobailno: e.target.value })}
+              value={user.phone_number}
+              onChange={(e) => setuser({ ...user, phone_number: e.target.value })}
             />
             <input
               type="Password"
               className="contexinput"
               placeholder="Password"
-              value={user.pass}
-              onChange={(e) => setuser({ ...user, pass: e.target.value })}
+              value={user.password}
+              onChange={(e) => setuser({ ...user, password: e.target.value })}
             />
 
             <button className="lginbtn" onClick={Handlesubmit}>

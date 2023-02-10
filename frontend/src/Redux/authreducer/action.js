@@ -6,8 +6,9 @@ export const loginuser = (data) => (dispatch) => {
     type: types.USER_LOGIN_REQUEST,
   });
   return axios
-    .post(`https://average-lime-wildebeest.cyclic.app/user/login`, data)
+    .post(`${process.env.REACT_APP_APILINK}/user/login`, data)
     .then((r) => {
+      console.log(r.data)
       dispatch({
         type: types.USER_LOGIN_SUCCESS,
         payload: r.data,
