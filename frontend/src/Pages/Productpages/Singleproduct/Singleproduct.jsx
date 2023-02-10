@@ -20,7 +20,7 @@ export const Singleproduct = () => {
         console.log(e);
       });
   }, []);
-  const array = Array(data.rating).fill(0);
+ 
 
   return (
     <>
@@ -32,10 +32,10 @@ export const Singleproduct = () => {
         <div className="decscbody-sing1">
           <h1 className="protitle">{data.title}</h1>
           <div className="ratingstars">
-            {array.map((index) => (
-              <FaStar key={index} />
-            ))}{" "}
-            <p>(1122 ratings) </p>
+            
+              <FaStar />
+            
+            <p>{data.rating} </p>
           </div>
 
           <h1 className="salpirce">

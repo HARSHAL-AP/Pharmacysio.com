@@ -12,7 +12,7 @@ export const Login = () => {
   const navigate=useNavigate()
   const [user, setuser] = useState({
     email: "",
-    pass: "",
+    password: "",
   });
   const acouser=useSelector((store)=>store.Authreducer)
   const HandleLogin=()=>{
@@ -66,8 +66,8 @@ export const Login = () => {
               type="Password"
               className="contexinput"
               placeholder="Password"
-              value={user.pass}
-              onChange={(e) => setuser({ ...user, pass: e.target.value })}
+              value={user.password}
+              onChange={(e) => setuser({ ...user, password: e.target.value })}
             />
             <button className="lginbtn" onClick={HandleLogin}>Login</button>
             <p className="forgotp">Forgot Password</p>

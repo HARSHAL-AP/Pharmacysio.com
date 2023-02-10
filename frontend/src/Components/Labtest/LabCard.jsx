@@ -8,7 +8,7 @@ export const LabCard = ({elem}) => {
         <div className='imgltd'>  <img src="https://cdn-icons-png.flaticon.com/512/2971/2971555.png" alt="" /></div>
       
         <div className='subtext'>
-          <h1>{elem.name}</h1>
+          <h1>{elem.title}</h1>
           <p>₹ {elem.price}</p>
           <button>Book Now</button>
         </div>
