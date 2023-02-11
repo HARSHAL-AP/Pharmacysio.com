@@ -3,6 +3,7 @@ import * as types from "./actionTypes";
 const initialState = {
   products: [],
   labtest: [],
+  medicine: [],
   isLoading: false,
   isError: false,
 };
@@ -18,6 +19,7 @@ const reducer = (state = initialState, action) => {
 
     case types.GET_PRODUCT_DATA_FAILURE:
       return { ...state, isLoading: false, isError: true };
+
     case types.GET_LABTEST_DATA_REQUEST:
       return { ...state, isLoading: true };
 
@@ -25,6 +27,15 @@ const reducer = (state = initialState, action) => {
       return { ...state, isLoading: false, labtest: payload };
 
     case types.GET_LABTEST_DATA_FAILURE:
+      return { ...state, isLoading: false, isError: true };
+
+    case types.GET_MEDICINE_DATA_REQUEST:
+      return { ...state, isLoading: true };
+
+    case types.GET_MEDICINE_DATA_SUCCESS:
+      return { ...state, isLoading: false, medicine: payload };
+
+    case types.GET_MEDICINE_DATA_FAILURE:
       return { ...state, isLoading: false, isError: true };
     default:
       return state;
