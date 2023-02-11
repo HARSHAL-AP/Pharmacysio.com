@@ -1,0 +1,40 @@
+.medheadig{
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.medbody{
+    width:90% ;
+    
+    margin: auto;
+    margin-top: 50px;
+   
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 25px;
+}
+
+
+@media screen and (max-width: 780px) {
+
+    .medheadig{
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 60px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .medbody{
+        width:90% ;
+        
+        margin: auto;
+        margin-top: 50px;
+       
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+    }
+
+}

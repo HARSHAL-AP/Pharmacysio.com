@@ -36,7 +36,7 @@ export const Home = () => {
             alt=""
             className="cateiconimg-9"
           />
-          <Link to="/">Medicine</Link>
+          <Link to="/medicine">Medicine</Link>
         </div>
         <div className="categryhomedi">
           <img

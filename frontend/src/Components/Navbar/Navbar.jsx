@@ -18,9 +18,7 @@ export const Navbar = () => {
             <button className="navbtmns">
               <Link to="/login" className="navbtnlinks"><AiOutlineUser/><h2 className="navlinkheadings">Login</h2></Link>
             </button>
-            <button className="navbtmns">
-              <Link to="/wishlist" className="navbtnlinks"><AiOutlineHeart/><h2 className="navlinkheadings">Wishlist</h2></Link>
-            </button >
+            
             <button className="navbtmns">
               <Link to="/cart" className="navbtnlinks"><AiOutlineShopping/><h2 className="navlinkheadings">Cart</h2></Link>
             </button>
@@ -29,7 +27,7 @@ export const Navbar = () => {
         </div>
       </div>
       <div className="subnav">
-      <h2>Medicine</h2>
+      <Link to="/medicine">Medicine</Link>
       <Link to="/labtests">Lab Test</Link>
       <h2>Track Your Health</h2>
       <h2>Farmer Products</h2>

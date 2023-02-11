@@ -19,6 +19,8 @@ import { Ayurvedic } from '../Pages/Productpages/Allcategorys/Ayurvedic'
 import { Motherandbaby } from '../Pages/Productpages/Allcategorys/Mother&baby'
 import { Homecare } from '../Pages/Productpages/Allcategorys/Homecare'
 import { Personalcare } from '../Pages/Productpages/Allcategorys/Pesonalcare'
+import { Medicine } from '../Pages/Medicines/Medicine'
+
 export const Allroute = () => {
   return (
     <>
@@ -43,6 +45,7 @@ export const Allroute = () => {
     <Route path="/motherandbaby" element={<Motherandbaby/>}/>
     <Route path="/homecare" element={<Homecare/>}/>
     <Route path="/personalcare" element={<Personalcare/>}/>
+    <Route path="/medicine" element={<Medicine/>}/>
     </Routes>
     </>
     

@@ -1,0 +1,23 @@
+.paginati{
+    width: 200px;
+margin: auto;
+gap: 15px;
+margin-top: 50px;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+@media screen and (max-width: 780px) {
+    .paginati{
+        margin: auto;
+        
+        margin-top: 50px;
+        
+        
+        }
+    
+
+
+}

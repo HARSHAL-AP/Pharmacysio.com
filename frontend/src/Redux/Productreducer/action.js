@@ -39,3 +39,20 @@ export const getLabtests = () => (dispatch) => {
     });
 };
 
+export const getMedicindata=(qparams,alphabet="A")=>(dispatch)=>{
+dispatch({type:types.GET_MEDICINE_DATA_REQUEST})
+
+return axios
+.get(`${process.env.REACT_APP_APILINK}/drug/${alphabet}`,{params:qparams})
+.then((r) => {
+  dispatch({
+    type: types.GET_MEDICINE_DATA_SUCCESS,
+    payload: r.data,
+  });
+  
+})
+.then((e) => {
+  dispatch({ type: types.GET_MEDICINE_DATA_FAILURE});
+});
+
+}
