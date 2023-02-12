@@ -20,6 +20,8 @@ import { Motherandbaby } from '../Pages/Productpages/Allcategorys/Mother&baby'
 import { Homecare } from '../Pages/Productpages/Allcategorys/Homecare'
 import { Personalcare } from '../Pages/Productpages/Allcategorys/Pesonalcare'
 import { Medicine } from '../Pages/Medicines/Medicine'
+import { Acount } from '../Pages/Acount/Acount'
+import {PrivetRoute} from "../Components/PrivetRoute"
 
 export const Allroute = () => {
   return (
@@ -28,7 +30,7 @@ export const Allroute = () => {
     <Route path="/" element={<Home/>}/>
 
     <Route path="/signup" element={<SIgnup/>}/>
-    <Route path="/wishlist" element={<Wishlist/>}/>
+    <Route path="/wishlist" element={<PrivetRoute><Wishlist/></PrivetRoute>}/>
     <Route path="/product" element={<Product/>}/>
     <Route path="/covidessential" element={<Covidessential/>}/>
     <Route path="/skincare" element={<Skincare/>}/>
@@ -38,7 +40,7 @@ export const Allroute = () => {
     <Route path="/labtests" element={<Labtest/>}/>
     <Route path="/labtests/:id" element={<Singletest/>}/>
     <Route path="/login" element={<Login/>}/>
-    <Route path="/cart" element={<Cart/>}/>
+    <Route path="/cart" element={<PrivetRoute><Cart/></PrivetRoute>}/>
     <Route path="/payment" element={<Payment/>}/>
     <Route path="/sexualwellness" element={<Sexualwellness/>}/>
     <Route path="/ayurvedic" element={<Ayurvedic/>}/>
@@ -46,6 +48,7 @@ export const Allroute = () => {
     <Route path="/homecare" element={<Homecare/>}/>
     <Route path="/personalcare" element={<Personalcare/>}/>
     <Route path="/medicine" element={<Medicine/>}/>
+    <Route path="/acount" element={<PrivetRoute><Acount/></PrivetRoute>}/>
     </Routes>
     </>
     

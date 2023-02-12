@@ -8,42 +8,13 @@ import { useDispatch, useSelector } from "react-redux";
 
 export const Cart = () => {
   const [value, setValue] = useState("");
-
+  const dispatch=useDispatch()
     const navigate=useNavigate()
   const [subtotal, setSubtotal] = useState(0);
-  const data = [
-    {
-      _id: "63df416644562bc2ceeb31d2",
-      image:
-        "https://cdn01.pharmeasy.in/dam/products_otc/I04110/cofsils-orange-lozenges-strip-of-10-2-1669655050.jpg",
-      title: "Cofsils Orange Lozenges Strip Of 10",
-      saleprice: 28,
-      price: 33,
-      discount: 15,
-      category: "covideesential",
-      subcategory: "coldandcough",
-      rating: 3,
-    },
-    {
-      _id: "63df416644562bc2ceeb31d3",
-      image:
-        "https://cdn01.pharmeasy.in/dam/products_otc/181135/vicks-vaporub-25ml-relief-from-cold-cough-headache-and-body-pain-2-1669655043.jpg",
-      title: "Vicks Vaporub 25ml Relief From Cold Coug...",
-      saleprice: 90,
-      price: 90,
-      discount: 0,
-      category: "covideesential",
-      subcategory: "coldandcough",
-      rating: 0,
-    },
-  ];
+  const data =useSelector((store)=>store.Authreducer.cart_item)
 
   let total = 0;
- data.forEach((ele) => {
-
-    total += (ele.price*1) ;
   
-});
 
   return (
     <>
