@@ -1,0 +1,59 @@
+.acbocy {
+  width: 90%;
+  height: 500px;
+
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+}
+.linksac {
+  width: 25%;
+  height: 500px;
+  
+}
+.dashboards {
+  width: 75%;
+  height: 500px;
+  border: 1px solid rgb(59, 59, 59);
+}
+.accontener {
+  height: 150px;
+  
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+.usercon {
+  width: 45px;
+  height: 45px;
+  font-size: 28px;
+  border-radius: 50%;
+  background-color: rgb(214, 223, 220);
+  color: rgb(7, 51, 133);
+}
+.userinfo {
+  width: 70%;
+  text-align: left;
+
+}
+.userinfo > h1 {
+  font-size: 18px;
+  font-weight: 700;
+}
+.userinfo > p{
+  font-size: 14px;
+  font-weight: 350;
+  font-style: italic;
+ 
+}
+.logoutbtn{
+  height: 35px;
+  width: 75px;
+  margin-top: 15px;
+  background-color: red;
+  color: aliceblue;
+  border-radius: 5px;
+}

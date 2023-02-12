@@ -1,11 +1,23 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import "./Navbar.css";
 import Logo from "../../Images/Logo.png";
 import { Link,useNavigate } from "react-router-dom";
 import {AiOutlineShopping,AiOutlineEnvironment,AiOutlineHeart,AiOutlineUser,AiOutlineMenu} from "react-icons/ai"
+import { useSelector } from "react-redux";
+import locationFn from "./getlocation"
 
 export const Navbar = () => {
   const navigate=useNavigate()
+  const [location, setLocation] = useState({});
+  const user=useSelector(store=>store.Authreducer)
+  const username=user.userdata.first_name
+  
+  useEffect(() => {
+   
+    locationFn().then((res) => {
+      setLocation(JSON.parse(localStorage.getItem("location")));
+    });
+  }, []);
   return (
     <>
       <div className="navbar01">
@@ -14,9 +26,9 @@ export const Navbar = () => {
             <img src={Logo} alt="" onClick={()=>navigate("/")}/>
           </div>
           <div className="acsections01">
-            <button className="navbtmns"><AiOutlineEnvironment/><h2 className="navlinkheadings">Get Location</h2></button>
+            <button className="navbtmns" ><AiOutlineEnvironment/><h2 className="navlinkheadings">{location.district}</h2></button>
             <button className="navbtmns">
-              <Link to="/login" className="navbtnlinks"><AiOutlineUser/><h2 className="navlinkheadings">Login</h2></Link>
+              <Link to={user.isAuth?"/acount":"/login"} className="navbtnlinks"><AiOutlineUser/><h2 className="navlinkheadings">{user.isAuth?username:"Login"}</h2></Link>
             </button>
             
             <button className="navbtmns">

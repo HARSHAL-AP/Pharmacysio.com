@@ -4,37 +4,32 @@ import { Navbar } from "../../Components/Navbar/Navbar";
 import { Fotter } from "../../Components/Fotter/Fotter";
 import Logo from "../../Images/Logo.png";
 import { useNavigate } from "react-router-dom";
-import {loginuser} from "../../Redux/authreducer/action"
-import { useDispatch,useSelector } from "react-redux";
+import { loginuser } from "../../Redux/authreducer/action";
+import { useDispatch, useSelector } from "react-redux";
 
 export const Login = () => {
-  const disptch=useDispatch()
-  const navigate=useNavigate()
+  const disptch = useDispatch();
+  const navigate = useNavigate();
   const [user, setuser] = useState({
     email: "",
     password: "",
   });
-  const acouser=useSelector((store)=>store.Authreducer)
-  const HandleLogin=()=>{
-
-  disptch(loginuser(user)).then(()=>Sucseser())
-
-   
-  }
-  const Sucseser=()=>{
+  const acouser = useSelector((store) => store.Authreducer);
+  const HandleLogin = () => {
+    disptch(loginuser(user)).then(() => Sucseser())
     
-    document.getElementById("contextd").style.display="none";
-    document.getElementById("sucsessd").style.display="block";
-  }
-  const Handlenavigate=()=>{
-
-   
-     navigate("/")
-   
-  }
+  };
+  
+  const Sucseser = () => {
+    document.getElementById("contextd").style.display = "none";
+    document.getElementById("sucsessd").style.display = "block";
+  };
+  const Handlenavigate = () => {
+    navigate("/");
+  };
   return (
     <>
-    <div className="sucsesssmsg" id="sucsessd">
+      <div className="sucsesssmsg" id="sucsessd">
         <img
           src="https://static.vecteezy.com/system/resources/previews/005/163/927/original/login-success-concept-illustration-flat-design-eps10-modern-graphic-element-for-landing-page-empty-state-ui-infographic-icon-vector.jpg"
           alt=""
@@ -43,7 +38,7 @@ export const Login = () => {
         <p>Please click on ok to continew..</p>
         <button onClick={Handlenavigate}>OK</button>
       </div>
-      <div className="context"  id="contextd">
+      <div className="context" id="contextd">
         <div className="contexadd">
           <img
             src="https://static.vecteezy.com/system/resources/previews/006/174/506/non_2x/female-pharmacist-doing-her-job-dispensing-medicine-free-vector.jpg"
@@ -69,7 +64,9 @@ export const Login = () => {
               value={user.password}
               onChange={(e) => setuser({ ...user, password: e.target.value })}
             />
-            <button className="lginbtn" onClick={HandleLogin}>Login</button>
+            <button className="lginbtn" onClick={HandleLogin}>
+              Login
+            </button>
             <p className="forgotp">Forgot Password</p>
           </div>
           <p className="dnhac">Don't have acount yet?</p>
