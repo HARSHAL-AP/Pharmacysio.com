@@ -1,0 +1,15 @@
+.tbconter{
+    width: 95%;
+    margin: auto;
+    margin-top: 50px;
+    overflow: auto;
+}
+.catecontene{
+    width: 90%;
+    height: auto;
+    display:flex ;
+    gap: 20px;
+    margin: auto;
+    margin-top: 25px;
+    z-index: 0;
+}
