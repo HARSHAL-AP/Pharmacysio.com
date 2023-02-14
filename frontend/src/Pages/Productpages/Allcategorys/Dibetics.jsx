@@ -7,21 +7,22 @@ import { getProduct } from "../../../Redux/Productreducer/action";
 import {Singleitem1} from "../../../Components/Productpage/Singleitem1"
 import { useLocation,useSearchParams } from "react-router-dom";
 import { useDispatch,useSelector } from "react-redux/es/exports";
+import { Button } from "@chakra-ui/react";
 
 export const Dibetics = () => {
     const dispatch=useDispatch()
     const location=useLocation()
     const [searchParams]=useSearchParams()
     const product=useSelector((store)=>store.Productreducer.products)
-    
+    const [page, setpage] = useState(1);
     useEffect(()=>{
      if(location||product.length===0){
       const getProductParams={
         parmas:{
-          category:"diabetic_care",
+          page: page,
           sort:searchParams.get("sort"),
           price:searchParams.get("price")  
-        }
+        },category:"diabetic_care"
       }
       dispatch(getProduct(getProductParams))
      }
@@ -31,7 +32,7 @@ export const Dibetics = () => {
 
 
 
-    },[dispatch,location.search,product.length,searchParams])
+    },[dispatch,location.search,product.length,searchParams,page])
    
   return (
     <>
@@ -46,6 +47,16 @@ export const Dibetics = () => {
           })}
 
         </div>
+      </div>
+      <div className="paginati">
+        <Button
+          isDisabled={page === 1 ? true : false}
+          onClick={() => setpage(page - 1)}
+        >
+          Previous
+        </Button>
+        <Button>{page}</Button>
+        <Button onClick={() => setpage(page + 1)}>Next</Button>
       </div>
       <Fotter />
     </>

@@ -3,15 +3,17 @@ import { useSearchParams } from "react-router-dom";
 import "./pstyle.css";
 export const Filter = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const [sort, setSorty] = useState(searchParams.get("sort") || "");
+  const [sort, setSorty] = useState(searchParams.get("sort")|| "");
   const [price,setprice]=useState(searchParams.get("price")||"")
 
 const handleFilter=(e)=>{
-setprice(e.target.value)
+  console.log(e.target.value)
+  setprice(e.target.value)
 }
    
 
   const handleSort = (e) => {
+    console.log(e.target.value)
     setSorty(e.target.value);
   };
 
@@ -30,7 +32,8 @@ setprice(e.target.value)
         <div className="fillin876" onChange={handleSort}>
           <div>
             <p>Discount</p>
-            <input type="Checkbox" />
+            <input type="Checkbox" value="discount"
+              name="sort"/>
           </div>
           <div>
             <p>Price Low to high</p>
