@@ -20,5 +20,7 @@ export const DELET_CART_ITEM_SUCCESS = "DELET_CART_ITEM_SUCCESS";
 export const DELET_CART_ITEM_FAILURE = "DELET_CART_ITEM_FAILURE";
 
 
+export const LOGOUT = "LOGOUT";
+
 
 //action for labtest item

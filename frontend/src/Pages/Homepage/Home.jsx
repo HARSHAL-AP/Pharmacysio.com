@@ -7,6 +7,8 @@ import Slide3 from "../../Images/Slide3.png";
 import Slide4 from "../../Images/Slide4.png";
 import { Link } from "react-router-dom";
 import {Fotter} from "../../Components/Fotter/Fotter"
+import { Preiscription } from "../../Components/Prescription/Preiscription";
+
 
 export const Home = () => {
   const settings = {
@@ -71,6 +73,8 @@ export const Home = () => {
           <Link to="/">Cosmatics</Link>
         </div>
       </div>
+ <Preiscription/>
+      
       <Fotter/>
     </>
   );
