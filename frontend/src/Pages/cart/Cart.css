@@ -1,6 +1,6 @@
 .Cartbody {
   width: 75%;
-
+display: none;
   margin: auto;
 
 }
@@ -104,6 +104,22 @@ color: rgb(128, 128, 128);
   background-color: rgb(0, 97, 241);
   color: aliceblue;
   border-radius:10px ;
+}
+.emptycart{
+  width: 70%;
+margin: auto;
+text-align: center;
+}
+.emptycart>img{
+  width: 40%;
+  margin: auto
+  
+}
+.emptycart>h1{
+  width: 40%;
+  margin: auto;
+  color: green;
+  font-weight: 600;
 }
 @media screen and (max-width: 780px) {
   .Cartbody {

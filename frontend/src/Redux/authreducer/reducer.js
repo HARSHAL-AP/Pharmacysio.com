@@ -54,7 +54,7 @@ export const reducer = (oldState = initialstate, action) => {
       
    
     case types.DELET_CART_ITEM_SUCCESS:
-      let cart=oldState.cart_item.filter((item) => item.id !== payload)
+      let cart=oldState.cart_item.filter((item) => item._id !== payload)
       localStorage.setItem("cart_item",JSON.stringify(cart));
 
 
@@ -78,7 +78,23 @@ export const reducer = (oldState = initialstate, action) => {
         isAuthLoading: false,
         cart_item: update,
       };
-    
+      case types.LOGOUT:
+        localStorage.setItem("isAuth",JSON.stringify(false));
+        localStorage.setItem("token",JSON.stringify(""));
+        localStorage.setItem("cart_item",JSON.stringify([]));
+        localStorage.setItem("labtest_item",JSON.stringify([]))
+        localStorage.setItem("user",JSON.stringify({}));
+        
+        return {
+          ...oldState,
+          isAuthLoading: false,
+          isAuth:false,
+          token:"",
+          userdata:{},
+          cart_item:[],
+          labtest_item:[]
+        };
+      
     default:
       return oldState;
   }

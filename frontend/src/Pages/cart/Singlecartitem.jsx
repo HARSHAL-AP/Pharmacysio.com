@@ -1,12 +1,16 @@
 import React,{useState,useEffect}from "react";
 import "./Singlecartite.css"
+import {deletocart} from "../../Redux/authreducer/action"
+import { useDispatch, useSelector } from "react-redux";
 
 
 export const Singlitem = ({ el }) => {
+  const dispatch=useDispatch()
     const [count, setCount] = useState(1);
     const [price,setPrice]=useState(el.price)
     const Handleremove = () => {
-       console.log("Delet")
+      console.log(el)
+      dispatch(deletocart(el._id))
       };
 
       const handleupdate = () => {
@@ -24,26 +28,9 @@ export const Singlitem = ({ el }) => {
               </p>
             </div>
             <div className="qtybody">
-              <button
-                className="qtyadustbtn2335"
-                onClick={() => {
-                  setCount(count - 1)
-                  handleupdate()
-                }}
-                disabled={count == 1 ? true : false}
-              >
-                -
-              </button>
+              
               <h1>{count}</h1>
-              <button
-                className="qtyadustbtn2335"
-                onClick={() => {
-                  setCount(count + 1)
-                  handleupdate()
-                }}
-              >
-                +
-              </button>
+              
             </div>
           </div>
           <div className="pricebody">
@@ -74,20 +61,9 @@ export const Singlitem = ({ el }) => {
   
           <div className="esqtybody4345">
             <div className="ressqtyadjuster">
-              <button
-                className="qtyadustbtn2335"
-                onClick={() => setCount(count - 1)}
-                disabled={count == 1 ? true : false}
-              >
-                -
-              </button>
+            
               <h1>{count}</h1>
-              <button
-                className="qtyadustbtn2335"
-                onClick={() => setCount(count + 1)}
-              >
-                +
-              </button>
+             
             </div>
             <div className="respricebiody546978945">
               <h1 className="resprice53647">₹ {el.price * count}</h1>

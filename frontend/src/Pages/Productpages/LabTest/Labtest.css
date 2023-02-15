@@ -1,30 +1,68 @@
-.Labtestheading{
-    font-size: 24px;
-    margin-top: 25px;
-    text-align: left;
-    margin-left: 10%;
-    font-weight: 600;
+.Labtestheading {
+  font-size: 24px;
+  margin-top: 25px;
+  text-align: left;
+  margin-left: 10%;
+  font-weight: 600;
 }
-.Selectlocbox{
-    width: 85%;
-    height: 400px;
-    margin: auto;
-    margin-top: 35px;
-  
+.Selectlocbox {
+  width: 70%;
+  height: 350px;
+  margin: auto;
+  margin-top: 35px;
+
+  display: flex;
+  justify-content: space-between;
 }
-.alltests{
-    width:80%;
-    padding: 20px;
-    gap: 30px;
-    
-    margin: auto;
-    margin-top: 35px;
-   
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+.alltests {
+  width: 80%;
+  padding: 20px;
+  gap: 30px;
+
+  margin: auto;
+  margin-top: 35px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.subhelat{
-    margin-top: 50px;
-    font-size: 22px;
+.subhelat {
+  margin-top: 50px;
+  font-size: 22px;
+  font-weight: 700;
+}
+.labimg {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.labimg > img {
+  width: 50%;
+}
+.booknowcontener {
+  width: 30%;
+ 
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  padding: 20px;
+  text-align: left;
+}
+.booknoeh1{
+
     font-weight: 700;
+    color:rgb(100, 49, 110);
+}
+.booknowcontener>p{
+  font-size: 12px;
+  margin-top: 10px
+}
+.descpara{
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    text-align: justify;
+    font-size: 14px;
+    background-color: rgb(209, 209, 209);
+    padding: 10px;
+    color: black;
 }

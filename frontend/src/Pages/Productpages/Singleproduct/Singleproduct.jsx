@@ -31,7 +31,7 @@ export const Singleproduct = () => {
   let item={...data,"quantity":Count}
   console.log(item)
   dispatch(addtocart(item))
- 
+ alert("Product Added to cart....")
   }
 
   return (
