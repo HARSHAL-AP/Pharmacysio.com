@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+Pharmacysio.com
+![Alt text](src/Images/logom.jpg)
+Pharmacysio.com is a website that provides a comprehensive catalog of health and wellness products, including prescription and over-the-counter medications, personal care items, and medical supplies. Our mission is to provide convenient and accessible healthcare solutions to our customers, with a focus on quality and affordability. We also Provide best solutions to our Users to Solve there medical Problems By keeping trace Of there everyday Neutrition and Helth data.
+We also Provide Dorestep Dilivelry of All Fruiuts and Vegitables. With Quality and Afofordability.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Used
 
-## Available Scripts
+- HTML,CSS,ReactJs,Redux,ChakraUI For Frontend
+- Nodejs,Express For Backend.
+- MongoDB For Database
 
-In the project directory, you can run:
+## Flow of the website
 
-### `npm start`
+### Home Page
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+On the Home Page, we Provided Links for all Pages Linke Medicine Page, Labtest Page, Login Page, and Signup page also if the user logged in then the user can access the account Page.
+we also provided Informative Sliders on the home page to describe our offers and all. in the bottom section of the home page use can directly upload their Prescription so he doesn't have to search for each product on our website
+acording to his need.
+![Alt text](phscrenshots/Hpmepage.jpg)
+![Alt text](phscrenshots/Home2.jpg)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Login and Signup Page
 
-### `npm test`
+On this Page User can Loin with his Credentials fro accessing the website. If the user doesn't have credentials hi has to create an account on the signup page.
+![Alt text](phscrenshots/logni.jpg)
+![Alt text](phscrenshots/signup.jpg)
+![Alt text](phscrenshots/login%20sucsess.jpg)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### User acount Page
+On this Page, the user can Update his credentials, and user can access his all order and Logout Button.
+![Alt text](phscrenshots/useracountpage.jpg)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Medicine Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+On this Page, users can access all Drugs prescribed by Doctors. But by the Government Rules hi can only buy OTC drugs from here if the user wants to but for non-OTC drugs hi must have to upload his Prescription for this after the Prescription is uploaded then we verify it by a registered Pharmacist.
+![Alt text](phscrenshots/medicinepage.jpg)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Lab test Page
+On this Page, we Provided functionality to directly book lab tests by adding NAme and contact no so our Lab partner directly calls you for further confirmation or the user can also Book a test by selecting by himself fro a given different test on this page.
+![Alt text](phscrenshots/labtestpage.jpg)
 
-### `npm run eject`
+### Other Product  Page
+ On this Page, Users can access all categories related to non-OTC drugs, Pharmaceutical Products, and Ayurvedic products. we also provide sorting, Filtering functionality here for searching different products.
+![Alt text](phscrenshots/prooducrpage.jpg)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Cart Page
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+On this Page, the User can access all Products that hi added to the cart also user can remove any product from the cart also.
+![Alt text](phscrenshots/emptycartpage.jpg)
+![Alt text](phscrenshots/cart.jpg)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Payment Page
+clicks on the checkout securely button on the cart page. The user needs to fill in his account details and then after clicking on submit my order button. here we Provide all Payment options. So users can checkout easily. 
+![Alt text](phscrenshots/paymentpage.jpg)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+##License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Pharmacysio.co is under the MIT License See LICENSE for More Information
