@@ -1,0 +1,41 @@
+.admincard{
+    width: 40%;
+    height: 150px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.admincard>img{
+    width:25%;
+    
+    margin: auto;
+   
+    display: flex;
+  
+    justify-content: flex-end;
+}
+.profitsale{
+    width: 40%;
+    height: 150px;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.allproducts{
+    width: 60%;
+    height: 150px;
+    margin: auto;
+    margin-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
