@@ -19,7 +19,7 @@ export const Medicine = () => {
      <Alphabets/>
      <div className='medbody'>
      {data.map((e)=>{
-return <ItemCard key={e.id} obj={e}/>
+return <ItemCard key={e._id} obj={e}/>
 
 
 

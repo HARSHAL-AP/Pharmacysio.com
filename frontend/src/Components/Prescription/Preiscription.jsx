@@ -15,20 +15,19 @@ export const Preiscription = () => {
 
     const formData = new FormData();
     formData.append("file", file);
-
-    try {
-      const response = await axios.post(
-        `${process.env.REACT_APP_APILINK}/prescription/upload`,
-        formData,
-        {
-          headers: { "Content-Type": "multipart/form-data" },
+    axios
+      .post(`${process.env.REACT_APP_APILINK}/prescription/upload`, formData,{
+        headers: {
+          'Content-Type': 'multipart/form-data'
         }
-      );
-
-      console.log("File uploaded:", response.data);
-    } catch (error) {
-      console.error("Error uploading file:", error);
-    }
+      }
+      )
+      .then((response) => {
+        console.log(response.data);
+      })
+      .catch((error) => {
+        console.error("Error uploading file", error);
+      });
   }
   return (
     <>
