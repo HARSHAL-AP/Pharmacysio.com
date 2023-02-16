@@ -22,6 +22,7 @@ import { Personalcare } from '../Pages/Productpages/Allcategorys/Pesonalcare'
 import { Medicine } from '../Pages/Medicines/Medicine'
 import { Acount } from '../Pages/Acount/Acount'
 import {PrivetRoute} from "../Components/PrivetRoute"
+import { Upload } from '../Pages/Uplaodpage/Upload'
 
 export const Allroute = () => {
   return (
@@ -48,6 +49,7 @@ export const Allroute = () => {
     <Route path="/homecare" element={<Homecare/>}/>
     <Route path="/personalcare" element={<Personalcare/>}/>
     <Route path="/medicine" element={<Medicine/>}/>
+    <Route path="/upload" element={<Upload/>}/>
     <Route path="/acount" element={<PrivetRoute><Acount/></PrivetRoute>}/>
     </Routes>
     </>

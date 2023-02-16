@@ -1,0 +1,62 @@
+.upbox {
+  width: 40%;
+  height: 170px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: auto;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: left;
+}
+
+.ppageh{
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 25px;
+    font-weight:600;
+    color: rgb(12, 99, 27);
+    margin-left: 10px;
+  }
+  .upbox >h2{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    color: rgb(36, 36, 36);
+  }
+.custom-file-upload {
+    margin: auto;
+  margin-top: 25px;
+  height: 65px;
+  width: 65px;
+}
+.valp{
+    font-size: 12px;
+    margin-left: 10px;
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+}
+.adcontener{
+    width: 90%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.adcontener>div{
+    width:30%;
+    height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: auto;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.addicon{
+  font-size: 60px;
+}
