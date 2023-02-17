@@ -47,7 +47,11 @@
   margin: auto;
 }
 
-
+.mediadd{
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
 @media screen and (max-width: 780px) {
   .slid {
     width:98%;
