@@ -1,6 +1,6 @@
 .upbox {
   width: 40%;
-  height: 170px;
+  height: 200px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   margin: auto;
@@ -37,9 +37,8 @@
 }
 .adcontener{
     width: 90%;
-    height: 200px;
-    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   
+    
   margin: auto;
   margin-top: 50px;
   display: flex;
@@ -48,15 +47,28 @@
 }
 .adcontener>div{
     width:30%;
-    height: 200px;
+    padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   margin: auto;
- 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  background-color: rgb(218, 252, 218);
+  
 }
+.adcontener>div>h1{
+ font-size: 24px;
+ margin-top: 10px;
+ font-weight: 500;
+
+}
+.adcontener>div>p{
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: rgb(59, 59, 59);
+ 
+ }
 .addicon{
   font-size: 60px;
+  margin: auto;
+  
 }

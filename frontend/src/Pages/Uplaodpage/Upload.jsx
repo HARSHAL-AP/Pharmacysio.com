@@ -16,7 +16,7 @@ import {
   PopoverAnchor,
   Button,
 } from "@chakra-ui/react";
-import { FcDebt } from "react-icons/fc";
+import { FcDebt, FcUnlock, FcTodoList } from "react-icons/fc";
 
 export const Upload = () => {
   const [file, setFile] = useState(null);
@@ -50,6 +50,11 @@ export const Upload = () => {
       <Navbar />
       <h1 className="ppageh">Upload Prescription</h1>
       <div className="upbox">
+        <h2 className="">
+          {" "}
+          We will create your cart based on your prescription for quick and
+          error free delivery.
+        </h2>
         <h2>Please upload images of valid prescription from your doctor.</h2>
         <Popover>
           <PopoverTrigger>
@@ -76,40 +81,34 @@ export const Upload = () => {
       </div>
       <div className="adcontener">
         <div>
-          <div>
-            <FcDebt className="addicon" />
-          </div>
-          <div>
-            <h1>Affordable</h1>
-            <p>
-              Find affordable medicine substitutes, save up to 50% on health
-              products, up to 80% off on lab tests and free doctor
-              consultations.
-            </p>
-          </div>
+          
+          <FcTodoList className="addicon" />
+          <h1>Reliable</h1>
+          <p>
+            All products displayed on Pharmacysio are procured from verified and
+            licensed pharmacies. All labs listed on the platform are accredited
+          </p>
         </div>
-        <div><div>
-            <FcDebt className="addicon" />
-          </div>
-          <div>
-            <h1>Affordable</h1>
-            <p>
-              Find affordable medicine substitutes, save up to 50% on health
-              products, up to 80% off on lab tests and free doctor
-              consultations.
-            </p>
-          </div></div>
-        <div><div>
-            <FcDebt className="addicon" />
-          </div>
-          <div>
-            <h1>Affordable</h1>
-            <p>
-              Find affordable medicine substitutes, save up to 50% on health
-              products, up to 80% off on lab tests and free doctor
-              consultations.
-            </p>
-          </div></div>
+
+        <div>
+          <FcUnlock className="addicon" />
+
+          <h1>Secure</h1>
+          <p>
+            Pharmacysio uses Secure Sockets Layer (SSL) 128-bit encryption and
+            is Payment Card Industry Data Security Standard (PCI DSS) compliant
+          </p>
+        </div>
+
+        <div>
+          <FcDebt className="addicon" />
+
+          <h1>Affordable</h1>
+          <p>
+            Find affordable medicine substitutes, save up to 50% on health
+            products, up to 80% off on lab tests and free doctor consultations.
+          </p>
+        </div>
       </div>
       <Fotter />
     </>

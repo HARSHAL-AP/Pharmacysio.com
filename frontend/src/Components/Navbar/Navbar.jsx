@@ -45,7 +45,7 @@ export const Navbar = () => {
       <Link to="/medicine">Medicine</Link>
       <Link to="/labtests">Lab Test</Link>
       <h2>Track Your Health</h2>
-      <h2>Farmer Products</h2>
+      <Link to="/farmerproduct">Farmer Products</Link>
       <h2>Cosmatics</h2>
       <h2>Store</h2>
 
