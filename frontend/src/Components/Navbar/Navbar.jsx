@@ -1,10 +1,14 @@
 import React,{useState,useEffect} from "react";
 import "./Navbar.css";
-import Logo from "../../Images/Logo.png";
+import mlogo from "../../Images/Logo/mlogo.png";
 import { Link,useNavigate } from "react-router-dom";
 import {AiOutlineShopping,AiOutlineEnvironment,AiOutlineHeart,AiOutlineUser,AiOutlineMenu,AiOutlineFileAdd} from "react-icons/ai"
 import { useSelector } from "react-redux";
 import locationFn from "./getlocation"
+import { GiMedicines,GiFruitBowl } from "react-icons/gi";
+import {SlChemistry} from "react-icons/sl";
+import {CgGirl} from "react-icons/cg";
+import {BiCurrentLocation}  from "react-icons/bi";
 
 export const Navbar = () => {
   const navigate=useNavigate()
@@ -23,7 +27,7 @@ export const Navbar = () => {
       <div className="navbar01">
         <div className="navbody">
           <div className="logobody">
-            <img src={Logo} alt="" onClick={()=>navigate("/")}/>
+            <img src={mlogo} alt="" onClick={()=>navigate("/")}/>
           </div>
           <div className="acsections01">
             <button className="navbtmns" ><AiOutlineEnvironment/><h2 className="navlinkheadings">{location.district}</h2></button>
@@ -42,12 +46,12 @@ export const Navbar = () => {
         </div>
       </div>
       <div className="subnav">
-      <Link to="/medicine">Medicine</Link>
-      <Link to="/labtests">Lab Test</Link>
-      <h2>Track Your Health</h2>
-      <Link to="/farmerproduct">Farmer Products</Link>
-      <h2>Cosmatics</h2>
-      <h2>Store</h2>
+      <Link to="/medicine" className="subnavlinks"><GiMedicines/>Medicine</Link>
+      <Link to="/labtests" className="subnavlinks"><SlChemistry/>Lab Test</Link>
+      
+      <Link to="/farmerproduct" className="subnavlinks"><GiFruitBowl/>Farmer Products</Link>
+      <Link to="/" className="subnavlinks"><CgGirl/>Cosmatics</Link>
+      <Link to="/" className="subnavlinks"><BiCurrentLocation/>Store</Link>
 
       </div>
     </>

@@ -15,6 +15,8 @@ export const Medicine = () => {
   return (
     <>
     <Navbar/>
+
+    
      <h1 className='medheadig'>Find Your Prescription Medicines</h1>
      <Alphabets/>
      <div className='medbody'>

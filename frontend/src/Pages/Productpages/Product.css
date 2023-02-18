@@ -87,6 +87,12 @@
   font-weight: 600;
   color: rgb(15, 63, 5);
 }
+.cathead{
+  margin-top: 25px;
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
 @media screen and (max-width: 780px) {
   .pslid {
     width: 98%;

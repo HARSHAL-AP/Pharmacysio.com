@@ -56,3 +56,20 @@ return axios
 });
 
 }
+
+export const getFarmerpro = (qparams) => (dispatch) => {
+  dispatch({ type: types.GET_FARMERPRO_DATA_REQUEST });
+
+  return axios
+    .get(`${process.env.REACT_APP_APILINK}/farmerp`,{params:qparams})
+    .then((r) => {
+      dispatch({
+        type: types.GET_FARMERPRO_DATA_SUCCESS,
+        payload: r.data,
+      });
+      
+    })
+    .then((e) => {
+      dispatch({ type: types.GET_FARMERPRO_DATA_FAILURE });
+    });
+};

@@ -1,108 +1,94 @@
-.conbody {
-  width: 90%;
-  height: 300px;
-  margin: auto;
-  border: 1px solid rgb(230, 230, 230);
-  padding: 15px;
-  border-radius: 5px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-}
-.conbodyimg {
-  width: 55%;
-  height: 150px;
-  margin: auto;
-}
-.conimgcone {
-  width: 80%;
-height: auto;
-  margin: auto;
+.cardbody {
+  width: 100%;
+  height: 200px;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 5px;
 }
-.conheag {
-  width: 100%;
-  height:50px;
-  overflow: hidden;
+.loder{
+    width: 10%;
+}
+.imgb {
+  width: 30%;
+  
+}
+.imgb>img {
+  width: 60%;
+  
+}
+.datab {
+  width: 70%;
+ 
+}
+.cardheading {
+  text-align: left;
+  margin-left: 25px;
+  margin-top: 15px;
+  font-size: 20px;
+  
+  color: rgb(4, 43, 4);
+}
+.prequire {
+  text-align: left;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+.cardconi {
+  color: yellow;
+}
+.cname {
+  text-align: left;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
   font-size: 16px;
-  margin-top: 8px;
-  font-weight: 600;
-  text-align: left;
-  color: rgb(42, 63, 58);
+  font-weight: 500;
 }
-.mrpcon {
+.carinfo {
+  text-align: left;
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
   font-size: 15px;
-  margin-top: 5px;
-  font-weight: 600;
-  text-align: left;
-  color: rgb(138, 137, 137);
-  text-decoration: line-through;
+  font-weight: 300;
 }
-.consealp {
-  font-size: 17px;
-  margin-top: 5px;
+
+.pricecard {
+  width: 85%;
+  margin: auto;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pricecard > p {
+  font-size: 16px;
   font-weight: 700;
+  color: blueviolet;
+}
+.pricecard > button {
+  width: 75px;
+  height: 30px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 700;
+  background-color: rgb(20, 132, 42);
+  color: rgb(255, 255, 255);
+}
+.cardcontent {
+  width: 100%;
+  height: 30px;
   text-align: left;
-  color: rgb(0, 0, 0);
-}
-.consealp > span {
-  color: rgb(255, 121, 121);
-  margin-left: 9px;
-}
-
-@media screen and (max-width: 780px) {
-  .conbody {
-    width: 250px;
-    height: 300px;
-    border: 1px solid rgb(230, 230, 230);
-    padding: 15px;
-    border-radius: 5px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
-      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  }
-  .conbodyimg {
-    width: 55%;
-    height: 150px;
-    margin: auto;
-  }
-  .conimgcone {
-    width: 80%;
-  height: auto;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .conheag {
-    width: 100%;
-    height:50px;
-    overflow: hidden;
-    font-size: 16px;
-    margin-top: 8px;
-    font-weight: 600;
-    text-align: left;
-    color: rgb(42, 63, 58);
-  }
-  .mrpcon {
-    font-size: 15px;
-    margin-top: 5px;
-    font-weight: 600;
-    text-align: left;
-    color: rgb(138, 137, 137);
-    text-decoration: line-through;
-  }
-  .consealp {
-    font-size: 17px;
-    margin-top: 5px;
-    font-weight: 700;
-    text-align: left;
-    color: rgb(0, 0, 0);
-  }
-  .consealp > span {
-    color: rgb(255, 121, 121);
-    margin-left: 9px;
-  }
-
-
+  margin-left: 25px;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 400;
+  color: rgb(6, 119, 13);
 }
