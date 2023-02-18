@@ -223,69 +223,13 @@ export const Product = () => {
     <>
       <Navbar />
       <Slider {...settings} className="pslid">
-        <img src={psl1} alt="" className="pSlide1" />
+        <img src={psl1} alt="" className="pSlide1" onClick={()=>navigate("/heathyfood")}/>
 
-        <img src={psl2} alt="" className="pSlide1" />
+        <img src={psl2} alt="" className="pSlide1" onClick={()=>navigate("/healthcare")}/>
 
-        <img src={psl3} alt="" className="pSlide1" />
+        <img src={psl3} alt="" className="pSlide1" onClick={()=>navigate("/ayurvedic")}/>
       </Slider>
-      <div className="pbody">
-        <div className="pbheading">
-          <h1 className="pbh1head">
-            Deals of the Day <a>12:59 MINS LEFT HURRY!</a>
-          </h1>
-          <Link to="/covidessential" className="pbhpp">View All</Link>
-        </div>
-        <Slider {...productsetings} className="pbcontener" >
-          {covid.map((el, index) => {
-            return <Singleitem1 key={index} obj={el} />;
-          })}
-        </Slider>
-      </div>
-      <div className="pbody">
-        <div className="pbheading">
-          <h1 className="pbh1head">COVID Essentials </h1>
-          <Link to="/covidessential" className="pbhpp">View All</Link>
-        </div>
-        <Slider {...productsetings} className="pbcontener">
-          {covid.map((el, index) => {
-            return <Singleitem1 key={index} obj={el} />;
-          })}
-        </Slider>
-      </div>
-      <div className="pbody">
-        <div className="pbheading">
-          <h1 className="pbh1head">Skin Care </h1>
-          <Link to="/skincare" className="pbhpp">View All</Link>
-        </div>
-        <Slider {...productsetings} className="pbcontener">
-          {dibetic.map((el, index) => {
-            return <Singleitem1 key={index} obj={el} />;
-          })}
-        </Slider>
-      </div>
-      <div className="pbody">
-        <div className="pbheading">
-          <h1 className="pbh1head">Dibetic care </h1>
-          <Link to="/dibetics" className="pbhpp">View All</Link>
-        </div>
-        <Slider {...productsetings} className="pbcontener">
-          {covid.map((el, index) => {
-            return <Singleitem1 key={index} obj={el} />;
-          })}
-        </Slider>
-      </div>
-      <div className="pbody">
-        <div className="pbheading">
-          <h1 className="pbh1head">Personal Care</h1>
-          <Link to="/personalcare" className="pbhpp">View All</Link>
-        </div>
-        <Slider {...productsetings} className="pbcontener">
-          {covid.map((el, index) => {
-            return <Singleitem1 key={index} obj={el} />;
-          })}
-        </Slider>
-      </div>
+      <h1 className="cathead">Shop by category..</h1>
       <div className="allcategorysec">
         <div className="catcontemmain98" onClick={()=>navigate("/covidessential")}>
           <img

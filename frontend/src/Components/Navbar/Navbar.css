@@ -20,13 +20,13 @@
 .logobody {
   height: 100%;
   width: 300px;
- 
+  padding: 5px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .logobody > img {
-  width: 90%;
+  width: 80%;
 }
 
 .acsections01 {
@@ -51,25 +51,30 @@
 .subnav{
     height: 50px;
     width: 100%;
-    margin-top: 50px;
+    margin-top: 55px;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 25px;
-    background-color:#242429;
-    color: #fff;
+    background-color: #031b4e;
+    color: #000000;
 }
-.subnav>h2{
+.subnavlinks{
     color: rgb(255, 255, 255);
     font-size: 15px;
-    font-weight:400 ;
-    
+    font-weight:600 ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
 }
-.subnav>h2:hover{
-color:rgb(133, 219, 133) ;
-cursor: pointer;
-border-bottom: 2px solid rgb(133, 219, 133);
+.subnavlinks:hover{
+   
+    font-size: 15px;
+    font-weight:700 ;
+    border-bottom: 2px solid #fff;
 }
+
 .drowermenue{
     display: none;
 }

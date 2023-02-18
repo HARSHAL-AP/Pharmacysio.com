@@ -8,9 +8,10 @@ import Slide4 from "../../Images/Slide4.png";
 import { Link } from "react-router-dom";
 import {Fotter} from "../../Components/Fotter/Fotter"
 import { Preiscription } from "../../Components/Prescription/Preiscription";
-
+import { useNavigate } from "react-router-dom";
 
 export const Home = () => {
+  const navigate=useNavigate()
   const settings = {
     dots: false,
     infinite: true,
@@ -25,11 +26,11 @@ export const Home = () => {
       <Navbar />
 
       <Slider {...settings} className="slid">
-        <img src={Slide1} alt="" className="Slide1" />
+        <img src={Slide1} alt="" className="Slide1" onClick={()=>navigate("/medicine")}/>
 
-        <img src={Slide3} alt="" className="Slide1" />
+        <img src={Slide3} alt="" className="Slide1" onClick={()=>navigate("/farmerproduct")}/>
 
-        <img src={Slide4} alt="" className="Slide1" />
+        <img src={Slide4} alt="" className="Slide1" onClick={()=>navigate("/medicine")}/>
       </Slider>
       <div className="productdetails">
         <div className="categryhomedi">
@@ -62,7 +63,7 @@ export const Home = () => {
             alt=""
             className="cateiconimg-9"
           />
-          <Link to="/">Fruits & Vegitables</Link>
+          <Link to="/farmerproduct">Fruits & Vegitables</Link>
         </div>
         <div className="categryhomedi">
           <img
@@ -70,7 +71,7 @@ export const Home = () => {
             alt=""
             className="cateiconimg-9"
           />
-          <Link to="/">Cosmatics</Link>
+          <Link to="/skincare">Cosmatics</Link>
         </div>
       </div>
  <Preiscription/>
