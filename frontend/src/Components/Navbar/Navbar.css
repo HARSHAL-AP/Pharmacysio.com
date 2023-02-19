@@ -78,6 +78,60 @@
 .drowermenue{
     display: none;
 }
+.serbtn{
+    width: 400px;
+    height: 40px;
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.serbtn>input{
+    width:90%;
+    height: 40px;
+    border: 1px solid #031b4e;
+    padding-left: 5px;
+}
+.serbtn>button{
+    width:10%;
+    height: 100%;
+    margin-left: -10px;
+   background-color: #031b4e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    
+}
+.serachresult{
+  width: 400px;
+  height: 500px;
+
+  background-color: #fff;
+  position: absolute;
+  top: 50px;
+  overflow: auto;
+}
+.nopimg{
+    margin-top: 50px;
+}
+.sind{
+    display: block;
+}
+.sino{
+    display: none;
+}
+.semapc{
+    height: 35px;
+    width: 100%;
+    border-bottom: 1px solid rgb(160, 160, 160);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-style: italic;
+    padding-left: 20px;
+}
 @media screen and (max-width: 780px) {
     .navlinkheadings{
         display: none;

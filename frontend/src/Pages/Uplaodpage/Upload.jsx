@@ -76,7 +76,7 @@ export const Upload = () => {
             className="uplodput"
             onChange={handleFileChange}
           />
-          <AiOutlineCloudUpload />
+          <AiOutlineCloudUpload  className="upcon"/>
         </label>
       </div>
       <div className="adcontener">
