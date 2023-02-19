@@ -14,7 +14,7 @@
     font-weight: 500;
     margin-top: 25px;
     font-weight:600;
-    color: rgb(12, 99, 27);
+    color:  #031b4e;
     margin-left: 10px;
   }
   .upbox >h2{
@@ -35,6 +35,9 @@
     color: rgb(255, 0, 0);
     cursor: pointer;
 }
+.upcon{
+  color:  #031b4e;
+}
 .adcontener{
     width: 90%;
    
@@ -51,7 +54,7 @@
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
     rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   margin: auto;
-  background-color: rgb(218, 252, 218);
+  background-color: rgb(228, 233, 250);
   
 }
 .adcontener>div>h1{

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Fotter.css"
-import logom from "../../Images/logom.jpg"
+import mlogo from "../../Images/Logo/mlogo.png"
 
 export const Fotter = () => {
   return (
@@ -10,7 +10,7 @@ export const Fotter = () => {
       <div>Healthcare</div>
       <div>Lab Tests</div>
       <div>Fruits & Vegitables</div>
-      <div><img src={logom} alt="" className='logomfoter'/></div>
+      <div><img src={mlogo} alt="" className='logomfoter'/></div>
      </div>
      <div className='subfoter'>
      Copyright© 2023. All Rights Reserved.

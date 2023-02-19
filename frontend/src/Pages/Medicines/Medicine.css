@@ -1,40 +1,65 @@
-.medheadig{
+.medheadig {
+  text-align: left;
+  margin-left: 5%;
+  margin-top: 25px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.medbody {
+  width: 90%;
+
+  margin: auto;
+  margin-top: 50px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+.searchp {
+  width: 90%;
+  height: 200px;
+  margin: auto;
+
+  margin-top: 50px;
+  background-image: url("https://i0.wp.com/nodens.eu/wp-content/uploads/2019/10/AdobeStock_281967200.jpeg?fit=8000%2C4000&ssl=1");
+  background-size:cover;
+}
+.addlog {
+    width: 10%;
+    position: relative;
+    top: 5px;
+    left:89%;
+}
+.medadhead{
     text-align: left;
-    margin-left: 5%;
-    margin-top: 25px;
+    margin-left: 25px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: rgb(3, 41, 75);
+}
+.meaddacode{
+    text-align: left;
+    margin-left: 25px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: rgb(3, 75, 9); 
+}
+@media screen and (max-width: 780px) {
+  .medheadig {
+    text-align: left;
+    margin-left: 15%;
+    margin-top: 60px;
     font-size: 22px;
     font-weight: 400;
-}
-.medbody{
-    width:90% ;
-    
+  }
+  .medbody {
+    width: 90%;
+
     margin: auto;
     margin-top: 50px;
-   
+
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 25px;
-}
-
-
-@media screen and (max-width: 780px) {
-
-    .medheadig{
-        text-align: left;
-        margin-left: 15%;
-        margin-top: 60px;
-        font-size: 22px;
-        font-weight: 400;
-    }
-    .medbody{
-        width:90% ;
-        
-        margin: auto;
-        margin-top: 50px;
-       
-        display: grid;
-        grid-template-columns: repeat(1,1fr);
-        gap: 25px;
-    }
-
+  }
 }
