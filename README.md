@@ -1,5 +1,7 @@
-# Pharmacysio.com
-Pharmacysio.com is a website that provides a comprehensive catalog of health and wellness products, including prescription and over-the-counter medications, personal care items, and medical supplies. Our mission is to provide convenient and accessible healthcare solutions to our customers, with a focus on quality and affordability. We also Provide best solutions to our Users to Solve there medical Problems By keeping  trace Of there everyday Neutrition and Helth data.
+# Pharmasio.com
+![Alt text](frontend/src/Images/Logo/mlogo.png)
+
+Pharmasio.com is a website that provides a comprehensive catalog of health and wellness products, including prescription and over-the-counter medications, personal care items, and medical supplies. Our mission is to provide convenient and accessible healthcare solutions to our customers, with a focus on quality and affordability. We also Provide best solutions to our Users to Solve there medical Problems By keeping  trace Of there everyday Neutrition and Helth data.
 We also Provide Dorestep Dilivelry of All Fruiuts and Vegitables. With Quality and Afofordability.
 
 ## Feature
@@ -18,4 +20,4 @@ We also Provide Dorestep Dilivelry of All Fruiuts and Vegitables. With Quality a
 
 ##License
  
-Pharmacysio.co is under the MIT License See LICENSE for More Information
+Pharmasio.com is under the MIT License See LICENSE for More Information
