@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./Login.css";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import { Fotter } from "../../Components/Fotter/Fotter";
-import Logo from "../../Images/Logo.png";
+import mlogo from "../../Images/Logo/mlogo.png";
 import { useNavigate } from "react-router-dom";
 import { loginuser } from "../../Redux/authreducer/action";
 import { useDispatch, useSelector } from "react-redux";
@@ -46,7 +46,7 @@ export const Login = () => {
           />
         </div>
         <div className="conextconterlogin">
-          <img src={Logo} alt="" className="loglogo" />
+          <img src={mlogo} alt="" className="loglogo" />
           <h1 className="welheadign">Hellow Again! </h1>
           <p className="enterdtails">please enter Your details</p>
           <div className="inputconter">

@@ -93,11 +93,11 @@ export const Navbar = () => {
           <GiFruitBowl />
           Farmer Products
         </Link>
-        <Link to="/" className="subnavlinks">
+        <Link to="/product" className="subnavlinks">
           <CgGirl />
           Cosmatics
         </Link>
-        <Link to="/" className="subnavlinks">
+        <Link to="/product" className="subnavlinks">
           <BiCurrentLocation />
           Store
         </Link>

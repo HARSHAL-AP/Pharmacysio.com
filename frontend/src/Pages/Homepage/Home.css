@@ -1,36 +1,34 @@
-
 .Slide1 {
   width: 90%;
   height: 600px;
-  
+
   margin: auto;
   margin-top: 50px;
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   flex-wrap: wrap-reverse;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
 }
-.Slide1>img{
+.Slide1 > img {
   width: 45%;
   z-index: -10;
-
 }
 
-.mailns{
+.mailns {
   width: 45%;
   text-align: left;
 }
-.addhead{
- font-size: 2.5rem;
- font-weight: 600;
- color: #031b4e;
+.addhead {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #031b4e;
 }
-.adddesc{
+.adddesc {
   font-size: 1.5rem;
- font-weight: 600;
- color: #4d4d4d;
+  font-weight: 600;
+  color: #4d4d4d;
 }
-.idcsbtn{
+.idcsbtn {
   width: 250px;
   height: 40px;
   display: flex;
@@ -43,13 +41,12 @@
   cursor: pointer;
   font-size: 1rem;
   font-weight: 600;
-
 }
 .productdetails {
   height: 150px;
   margin: auto;
-  width: 85%;
-  margin-top: 50px;
+  width: 80%;
+  margin-top: 25px;
   margin-bottom: 50px;
 
   display: flex;
@@ -58,12 +55,11 @@
 }
 .categryhomedi {
   width: 18%;
-  
- padding: 15px;
+
+  padding: 15px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(192, 192, 192);
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+ 
   border-radius: 5px;
   text-align: center;
   color: rgb(0, 0, 0);
@@ -71,88 +67,159 @@
   font-weight: 500;
 }
 .categryhomedi:hover {
-  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 .cateiconimg-9 {
   width: 30%;
   margin: auto;
 }
 
-.mediadd{
+.mediadd {
   width: 90%;
   margin: auto;
   margin-top: 50px;
 }
-.adcontener{
+.adcontener {
   width: 90%;
- 
-  
-margin: auto;
-margin-top: 50px;
-display: flex;
-align-items: center;
-justify-content: space-between;
+
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.adcontener>div{
-  width:30%;
+.adcontener > div {
+  width: 30%;
   padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
-  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
-margin: auto;
-background-color: rgb(228, 233, 250);
-
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  margin: auto;
+  background-color: rgb(228, 233, 250);
 }
-.adcontener>div>h1{
-font-size: 24px;
-margin-top: 10px;
-font-weight: 500;
-
+.adcontener > div > h1 {
+  font-size: 24px;
+  margin-top: 10px;
+  font-weight: 500;
 }
-.adcontener>div>p{
-font-size: 14px;
-margin-top: 10px;
-font-weight: 500;
-color: rgb(59, 59, 59);
-
+.adcontener > div > p {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 500;
+  color: rgb(59, 59, 59);
 }
-.addicon{
-font-size: 60px;
-margin: auto;
-
+.addicon {
+  font-size: 60px;
+  margin: auto;
 }
-.dimno{
+.dimno {
   display: none;
+}
+.categoryadd {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+  padding: 10px;
+}
+.categoryadd > div {
+  width: 90%;
+  height: 150px;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+
+  justify-content: space-between;
+}
+.categoryadd > div > h1 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.categoryadd > div > p {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-top: 10px;
+}
+.spmcon {
+  font-size: 45px;
+  color: #031b4e;
+  margin: auto;
+}
+.maincate {
+  width: 100%;
+  margin-top: 50px;
+}
+.maincate > div {
+  width: 80%;
+  height: 300px;
+  
+  margin: auto;
+ gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.maincate > div>img {
+width: 50%;
+}
+.toppro{
+  width: 100%;
+
+}
+.toppro>div{
+  width: 80%;
+  margin: auto;
+  display: flex;
+  margin-top: 50px;
+
+}
+.toppro>div>img{
+  width: 32%;
+  margin: auto;
+}
+.hecaterdgh4{
+  font-size: 25px;
+  margin-top: 25px;
+  font-weight: 600;
+  color: #031b4e;
 }
 @media screen and (max-width: 780px) {
   .slid {
-    width:98%;
-  
+    width: 98%;
+
     margin: auto;
     margin-top: 50px;
-  
-    
-    overflow: hidden;
-    
-  }
 
+    overflow: hidden;
+  }
+  .categoryadd {
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(1, 1fr);
+
+    padding: 10px;
+    margin-top: 50px;
+  }
   .productdetails {
-    
     margin: auto;
     width: 85%;
     height: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-  
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-    
   }
   .categryhomedi {
-    width:100%;
+    width: 100%;
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(192, 192, 192);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
@@ -164,7 +231,8 @@ margin: auto;
     font-weight: 500;
   }
   .categryhomedi:hover {
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
   .cateiconimg-9 {
     width: 20%;
@@ -172,37 +240,35 @@ margin: auto;
   }
   .Slide1 {
     width: 90%;
- 
+
     margin: auto;
     margin-top: 150px;
-  
-  
   }
-  .dimno{
-    display:block;
+  .dimno {
+    display: block;
     margin-top: 50px;
   }
-  .Slide1>img{
+  .Slide1 > img {
     width: 45%;
     z-index: -10;
     display: none;
   }
-  
-  .mailns{
-    width:100%;
+
+  .mailns {
+    width: 100%;
     text-align: left;
   }
-  .addhead{
-   font-size: 2.5rem;
-   font-weight: 600;
-   color: #031b4e;
+  .addhead {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #031b4e;
   }
-  .adddesc{
+  .adddesc {
     font-size: 1.5rem;
-   font-weight: 600;
-   color: #4d4d4d;
+    font-weight: 600;
+    color: #4d4d4d;
   }
-  .idcsbtn{
+  .idcsbtn {
     width: 250px;
     height: 40px;
     display: flex;
@@ -215,6 +281,5 @@ margin: auto;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600;
-  
   }
 }

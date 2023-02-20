@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "./Signup.css";
-import Logo from "../../Images/Logo.png";
+import mlogo from "../../Images/Logo/mlogo.png";
 import signuppr from "../../Images/signuppr.jpg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+
 
 export const SIgnup = () => {
   const navigate = useNavigate();
@@ -57,7 +58,7 @@ export const SIgnup = () => {
       <div className="contextt" id="contextd">
         <div className="contexaddd">
           <img src={signuppr} alt="" />
-          <h1 className="welcomtag">WELCOME to Pharmacysio.com</h1>
+          <h1 className="welcomtag">WELCOME to Pharmasio.com</h1>
           <p className="slogan">
             We help you to get fit for the better Tomorrow.
           </p>
