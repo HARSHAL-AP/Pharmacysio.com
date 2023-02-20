@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Navbar.css"
-import Logo from "../../Images/Logo.png";
+import mlogo from "../../Images/mlogo.png";
 import { Sidebar } from '../Sidebar/Sidebar';
 
 export const Navbar = () => {
@@ -9,7 +9,7 @@ export const Navbar = () => {
       <div className='slo'>
       <Sidebar/>
       <div className='logobody'>
-        <img src={Logo} alt="" />
+        <img src={mlogo} alt="" />
       </div>
       </div>
       
