@@ -18,7 +18,7 @@ we also provided Informative Sliders on the home page to describe our offers and
 acording to his need.
 ![Alt text](src/Images/psc/H1.jpg)
 ![Alt text](src/Images/psc/H2.jpg)
-![Alt text](src/Images/psc/h3.jpg)
+
 ![Alt text](src/Images/psc/H4.jpg)
 
 ### Login and Signup Page
