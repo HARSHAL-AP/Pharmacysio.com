@@ -6,8 +6,10 @@ import mlogo from "../../Images/Logo/mlogo.png";
 import { useNavigate } from "react-router-dom";
 import { loginuser } from "../../Redux/authreducer/action";
 import { useDispatch, useSelector } from "react-redux";
+import { useToast } from '@chakra-ui/react'
 
 export const Login = () => {
+  const toast = useToast()
   const disptch = useDispatch();
   const navigate = useNavigate();
   const [user, setuser] = useState({
@@ -15,14 +17,34 @@ export const Login = () => {
     password: "",
   });
   const acouser = useSelector((store) => store.Authreducer);
+  const iserr = useSelector((store) => store.Authreducer.isAuthError);
+  const isAuth=useSelector((store) => store.Authreducer.isAuth);
   const HandleLogin = () => {
-    disptch(loginuser(user)).then(() => Sucseser())
-    
+    if(user.password===""||user.email===""){
+      toast({
+        title: `Please Enter write Credential to login...`,
+        status:'error',
+        isClosable: true,
+      })
+    }
+    else{
+      disptch(loginuser(user)).then( ()=>Sucseser())
+    }
+   
   };
-  
+
   const Sucseser = () => {
-    document.getElementById("contextd").style.display = "none";
-    document.getElementById("sucsessd").style.display = "block";
+    if(isAuth){
+      document.getElementById("contextd").style.display = "none";
+      document.getElementById("sucsessd").style.display = "block";
+    }
+    else{
+      toast({
+        title: `Somthing Went Wrong Please Try Again`,
+        status:'error',
+        isClosable: true,
+      })
+    }
   };
   const Handlenavigate = () => {
     navigate("/");
@@ -40,14 +62,17 @@ export const Login = () => {
       </div>
       <div className="context" id="contextd">
         <div className="contexadd">
+        
           <img
             src="https://static.vecteezy.com/system/resources/previews/006/174/506/non_2x/female-pharmacist-doing-her-job-dispensing-medicine-free-vector.jpg"
             alt=""
+            className="contextaddimg"
           />
         </div>
         <div className="conextconterlogin">
-          <img src={mlogo} alt="" className="loglogo" />
+          
           <h1 className="welheadign">Hellow Again! </h1>
+          <p className="enterdtails">Welcome to Pharmacio.com</p>
           <p className="enterdtails">please enter Your details</p>
           <div className="inputconter">
             <input

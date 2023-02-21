@@ -4,10 +4,11 @@ import mlogo from "../../Images/Logo/mlogo.png";
 import signuppr from "../../Images/signuppr.jpg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-
+import { useToast } from '@chakra-ui/react'
 
 export const SIgnup = () => {
   const navigate = useNavigate();
+  const toast = useToast()
   const [user, setuser] = useState({
     email: "",
     password: "",
@@ -22,16 +23,21 @@ export const SIgnup = () => {
   const [sucsess, setsucsess] = useState(false);
 
   const Handlesubmit = () => {
-    console.log(user);
-    axios
+    if(user.first_name==""||user.password===""||user.email===""||user.phone_number===""){
+      handleerr()
+    }
+    else{
+      axios
       .post(`${process.env.REACT_APP_APILINK}/user/register`, user)
       .then((r) => {
         setsucsess(true);
       })
       .then(() => shosucsess())
       .catch((e) => {
-        console.log(e);
+        handleerr();
       });
+    }
+    
   };
   const Handlenavigate = () => {
     setsucsess(false);
@@ -44,6 +50,13 @@ export const SIgnup = () => {
     }
   };
 
+  const handleerr=()=>{
+    toast({
+      title: `Somthing Went Wrong Please Try Again`,
+      status:'error',
+      isClosable: true,
+    })
+  }
   return (
     <>
       <div className="sucsesssmsg" id="sucsessd">
