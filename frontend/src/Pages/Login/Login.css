@@ -96,7 +96,7 @@
     background-color: #f8fae5;
 
 }
-.contexadd>img{
+.contextaddimg{
     width: 50%;
   
 }
@@ -106,8 +106,9 @@
   background-color: #083805;
 }
 .loglogo{
- width:20%;
- margin-left:50% ;
+width: 10px;
+position:absolute;
+top: 10px;
 }
 .welheadign{
     font-size: 1.8rem;

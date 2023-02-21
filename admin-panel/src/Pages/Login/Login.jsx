@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import "./Login.css"
-import Logo from "../../Images/Logo.png"
+import mlogo from "../../Images/mlogo.png"
 import { Button } from '@chakra-ui/react'
 import loginimg from "../../Images/loginimg.jpg"
 
@@ -19,8 +19,8 @@ console.log(admin)
    <>
    <div className='context'>
     <div className='loginconter'>
-     <img src={Logo} alt="" className='logimg'/>
-     <h1 className='logheading'>Login to Pharmacysio Admin</h1>
+     <img src={mlogo} alt="" className='logimg'/>
+     <h1 className='logheading'>Login to Pharmasio Admin</h1>
 
      <div className='logindiv'>
      <input type="email" placeholder='Email' value={admin.email} className='loginput' onChange={(e)=>setadmin({...admin,email:e.target.value})}/>
@@ -36,7 +36,7 @@ console.log(admin)
 
 
    </div>
-
+ 
   
    
    <div className="area">

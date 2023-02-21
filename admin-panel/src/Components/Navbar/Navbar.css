@@ -1,36 +1,121 @@
-.Navbar{
-    height:50px;
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-      padding-right: 20px;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-   
+.Navbar {
+  height: 60px;
+  width: 100%;
+  background-color: aliceblue;
+border-bottom: 1px solid rgb(253, 233, 233);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.logobody {
+  width: 15%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logobody > img {
+  width: 80%;
 
 }
-.logobody{
-    width: 80%;
-   
-    display: flex;
-    align-items: center;
+.AllSUblinks {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+
+}
+.acpopo {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+ padding-right: 20px;
+}
+.allnavlink {
+  padding: 5px;
   
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
-.logobody>img{
+.opupbtn {
+  display: none;
+}
+.mobailnavlink {
+  display: none;
+}
+.acbutonp{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+@media screen and (max-width: 780px) {
+  .Navbar {
+    height: 60px;
+    width: 100%;
+
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logobody {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+  }
+  .logobody > img {
     width: 80%;
-}
-.slo{
-    width: 20%;
+
+  }
+  .AllSUblinks {
+    width: 50%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+
+  }
+  .acpopo {
+    width: 15%;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-   
-}
-.acoverview{
-    width: 25%;
+    justify-content: flex-start;
+    gap: 15px;
+    
+  }
+  .allnavlink {
     display: flex;
     align-items: center;
-    justify-content:flex-end;
-    gap: 25px;
-   
+    justify-content: center;
+    gap: 10px;
+  }
+  .opupbtn {
+    width:45% ;
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    font-size: 25px;
+  }
+  .mobailnavlink {
+    display: block;
+    width: 100%;
+    height: 350px;
+    column-gap: 50px;
+    position: absolute;
+    top: 60px;
+
+    background-color: aliceblue;
+  }
 }

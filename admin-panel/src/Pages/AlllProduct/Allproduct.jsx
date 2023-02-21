@@ -43,6 +43,9 @@ export const Allproduct = () => {
   return (
     <>
  <Navbar/>
+ <div className='pageinfo'>
+         <h1> All Products</h1>
+     </div>
     <div className="catecontene">
        <Button onClick={()=>setcategory("covidessentials")}>Covid Essentials</Button>
        <Button onClick={()=>setcategory("personalcare")}>Helthcares</Button>
