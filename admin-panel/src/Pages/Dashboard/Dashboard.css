@@ -22,14 +22,39 @@
 }
 .dashbody{
     width: 80%;
-    height: 800px;
+    
     margin: auto;
+    padding-bottom: 50px;
     background-color: aliceblue;
     margin-top: 50px;
+    padding-top: 25px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-
-
+.everydata{
+   width: auto;
+ margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid red;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.everydata>div{
+    width:200px;
+    height: 150px;
+     margin: auto;
+    text-align: center;
+    
+    border: 1px solid red;
+}
+.dashheadings{
+text-align: center;
+margin-top: 30px;
+margin-bottom: 20px;
+font-size: 22px;
+font-weight: 600;
+}
 @media screen and (max-width: 780px) {
 
 
