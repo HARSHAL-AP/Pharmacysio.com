@@ -1,0 +1,17 @@
+.addpbody{
+    width: 80%;
+   
+    margin: auto;
+    padding-bottom: 50px;
+    background-color: aliceblue;
+    margin-top: 50px;
+    padding-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.formcontener{
+    width: 50%;
+   
+   
+    margin: auto;
+    margin-top: 50px;
+}
