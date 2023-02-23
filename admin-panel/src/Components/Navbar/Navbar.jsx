@@ -51,8 +51,8 @@ export const Navbar = () => {
               <PopoverCloseButton />
               <PopoverHeader>Manage Acount </PopoverHeader>
               <PopoverBody>
-               Profile<br/>
-               Logout
+               <p>Profile</p>
+               <p>Logout</p>
               </PopoverBody>
             </PopoverContent>
           </Popover>

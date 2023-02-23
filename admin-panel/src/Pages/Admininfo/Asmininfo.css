@@ -1,0 +1,80 @@
+.adinfobody{
+    width: 80%;
+  
+    margin: auto;
+    padding-bottom: 50px;
+    background-color: aliceblue;
+    margin-top: 50px;
+    padding-top: 25px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.usercard{
+    width: 40%;
+   
+    margin: auto;
+    margin-top: 50px;
+    
+   
+   }
+   .useracinfo{
+     width: 100%;
+    height:150px;
+    margin: auto;
+   display: flex;
+   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    
+   }
+   .useimg{
+     width: 25%;
+     height:150px;
+     margin: auto;
+    display: flex;
+    
+     align-items: center;
+     justify-content: center;
+     
+   }
+   .usericoon{
+     font-size: 100px;
+   }
+   .usbasicinfo{
+     width: 70%;
+     height:150px;
+     margin: auto;
+    
+     
+   }
+   .usbasicinfo>h1{
+     text-align: left;
+     font-size: 45px;
+     font-weight: 600;
+   }
+   .usbasicinfo>h4{
+     text-align: left;
+     font-size: 18px;
+     font-weight: 600;
+     font-style: italic;
+     color: rgb(56, 56, 56);
+   }
+   .useinfoupdate{
+    width: 100%;
+    height: 500px;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    margin-top: 25px;
+   
+   }
+   .inc{
+     width: 100%;
+     display: flex;
+    margin-top: 25px;
+   }
+   .inc1,.inc2{
+     width: 50%;
+     height: 300px;
+    
+     padding: 10px;
+   } 
+   .lgoutbtn{
+     margin-top: 25px;
+   }
