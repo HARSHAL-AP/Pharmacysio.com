@@ -87,6 +87,32 @@ const reducer = (state = initialState, action) => {
 
     case types.GET_ADMIN_DATA_FAILURE:
       return { ...state, isLoading: false, isError: true };
+
+    case types.GETALL_FARMERPRO_DATA_REQUEST:
+      return { ...state, isLoading: true };
+
+    case types.GETALL_FARMERPRO_DATA_SUCCESS:
+      return { ...state, isLoading: false, farmerp: payload };
+
+    case types.GETALL_FARMERPRO_DATA_FAILURE:
+      return { ...state, isLoading: false, isError: true };
+    case types.GETALL_MEDICINE_DATA_REQUEST:
+      return { ...state, isLoading: true };
+
+    case types.GETALL_MEDICINE_DATA_SUCCESS:
+      return { ...state, isLoading: false, medicine: payload };
+
+    case types.GETALL_MEDICINE_DATA_FAILURE:
+      return { ...state, isLoading: false, isError: true };
+
+    case types.GETALL_PRODUCT_DATA_REQUEST:
+      return { ...state, isLoading: true };
+
+    case types.GETALL_PRODUCT_DATA_SUCCESS:
+      return { ...state, isLoading: false, products: payload };
+
+    case types.GETALL_PRODUCT_DATA_FAILURE:
+      return { ...state, isLoading: false, isError: true };
     default:
       return state;
   }

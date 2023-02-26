@@ -22,3 +22,10 @@ export const loginuser = (data) => (dispatch) => {
     });
 };
 
+export const logOut=()=>(dispatch)=>{
+  dispatch({
+    type: types.LOGOUT,
+    
+  });
+
+}

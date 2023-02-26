@@ -56,6 +56,9 @@ border-bottom: 1px solid rgb(253, 233, 233);
     align-items: center;
     gap: 5px;
 }
+.profilebtn{
+  cursor: pointer;
+}
 @media screen and (max-width: 780px) {
   .Navbar {
     height: 60px;

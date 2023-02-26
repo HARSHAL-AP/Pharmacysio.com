@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from "react";
 import { Navbar } from "../../Components/Navbar/Navbar";
+
+import { useNavigate } from "react-router-dom";
+import {
+  Stat,
+  StatLabel,
+  StatNumber,
+  StatHelpText,
+  StatArrow,
+  StatGroup,
+} from "@chakra-ui/react";
 import {
   Table,
   Thead,
@@ -19,41 +29,38 @@ import {
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton,FormControl,FormLabel,Input
-} from '@chakra-ui/react'
-import { useDisclosure } from '@chakra-ui/react'
+  ModalCloseButton,
+  FormControl,
+  FormLabel,
+  Input,
+} from "@chakra-ui/react";
+import { useDisclosure } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 import {
-  getProductorders,
-  getLabtestorders,
+  
+    getallusers 
+ 
 } from "../../redux/rpoductreducer/action";
+export const User = () => {
+  const { isOpen, onOpen, onClose } = useDisclosure();
 
-export const Order = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-
-  const initialRef = React.useRef(null)
-  const finalRef = React.useRef(null)
+  const initialRef = React.useRef(null);
+  const finalRef = React.useRef(null);
   const dispatch = useDispatch();
-  const Productorders = useSelector(
-    (store) => store.Productreducer.Productorders
-  );
-  const labtestorde = useSelector(
-    (store) => store.Productreducer.labtestorders
-  );
+  const navigate = useNavigate();
 
-  useEffect(() => {
-    if (Productorders.length === 0) {
-      dispatch(getProductorders());
-    }
-    if (labtestorde.length === 0) {
-      dispatch(getLabtestorders());
-    }
-  }, [Productorders.length, labtestorde.length]);
+  const users = useSelector((store) => store.Productreducer.users);
+useEffect(()=>{
+dispatch(getallusers())
+},[])
+
+  
+
   return (
     <>
       <Navbar />
       <div className="pageinfo">
-        <h1> Orders</h1>
+        <h1> All Users({users.length})</h1>
       </div>
       <div className="dashbody">
         <Table variant="striped" colorScheme="teal" overflow="scrol">
@@ -61,28 +68,26 @@ export const Order = () => {
             <Tr>
               <Th>No</Th>
 
-              <Th>Order No</Th>
+              <Th>User name</Th>
 
-              <Th>Total Items</Th>
-              <Th>Total amount </Th>
-              <Th>Payment Method</Th>
-              <Th>Status</Th>
+              <Th>Email</Th>
+              <Th>Phone No </Th>
+              <Th>Total Orders</Th>
+             
             </Tr>
           </Thead>
           <Tbody>
-            {Productorders.map((el, index) => {
+            {users.map((el, index) => {
               return (
                 <Tr key={el.id}>
                   <Td>{index + 1}</Td>
 
-                  <Td>{el.order_number}</Td>
+                  <Td>{el.first_name}</Td>
 
-                  <Td>{el.items.length}</Td>
+                  <Td>{el.email}</Td>
+                  <Td>{el.phone_number} </Td>
                   <Td>
-                    {el.total_amount} ₹
-                  </Td>
-                  <Td>
-                    {el.payment_method}
+                    {el.orders.length}
                     <Modal
                       initialFocusRef={initialRef}
                       finalFocusRef={finalRef}
@@ -114,9 +119,7 @@ export const Order = () => {
                       </ModalContent>
                     </Modal>
                   </Td>
-                  <Td>
-                    {el.status?"Completed":"Pending"}
-                  </Td>
+                  <Td>{el.status ? "Completed" : "Pending"}</Td>
                 </Tr>
               );
             })}

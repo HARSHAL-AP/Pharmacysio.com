@@ -4,8 +4,20 @@ import { useNavigate } from "react-router-dom";
 import { AiOutlineFileAdd } from "react-icons/ai";
 import { useSelector } from "react-redux";
 import Loder from "../../Images/Loder.gif"
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,Text,Button
+} from '@chakra-ui/react'
+import { useDisclosure } from '@chakra-ui/react'
 export const Singleitem1 = ({obj}) => {
   const navigate = useNavigate();
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const finalRef = React.useRef(null)
   const data=useSelector((store)=>store.Productreducer.isLoading)
 
    const Handljump=(id)=>{
@@ -20,7 +32,7 @@ export const Singleitem1 = ({obj}) => {
     return (
       <>
        
-        <div className="cardbody">
+        <div className="cardbody" onClick={onOpen}>
          
           <div className="imgb">
             <img src={obj.image} alt="" />
@@ -35,6 +47,27 @@ export const Singleitem1 = ({obj}) => {
             
           </div>
         </div>
+        <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalHeader>{obj.title}</ModalHeader>
+          <ModalCloseButton />
+          <ModalBody>
+            <div>
+            <img src={obj.image} alt="" />
+            </div>
+         
+           
+          </ModalBody>
+
+          <ModalFooter>
+            <Button colorScheme='blue' mr={3} onClick={onClose}>
+              Close
+            </Button>
+            <Button variant='ghost'>Secondary Action</Button>
+          </ModalFooter>
+        </ModalContent>
+      </Modal>
       </>
     );
   }
