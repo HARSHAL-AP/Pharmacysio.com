@@ -1,0 +1,34 @@
+.alphabody{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    flex-wrap:wrap;
+}
+.alphabody>button{
+   color: green;
+}
+
+@media screen and (max-width: 780px) {
+
+    .medheadig{
+        text-align: left;
+        margin-left: 15%;
+        margin-top: 25px;
+        font-size: 22px;
+        font-weight: 400;
+    }
+    .alphabody{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 25px;
+        
+    }
+
+
+
+}

@@ -36,7 +36,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    
     gap: 10px;
     flex-wrap: wrap;
 }
@@ -44,10 +44,17 @@
     width:200px;
     height: 150px;
      margin: auto;
+     padding: 5px;
     text-align: center;
-    
-    border: 1px solid red;
+    border-radius: 5px;
+    box-shadow: rgba(188, 211, 236, 0.3) 0px 0px 0px 3px;
 }
+.everydata>div>h1{
+   font-size: 18px;
+   margin-top: 6px;
+   font-weight: 600;
+}
+
 .dashheadings{
 text-align: center;
 margin-top: 30px;

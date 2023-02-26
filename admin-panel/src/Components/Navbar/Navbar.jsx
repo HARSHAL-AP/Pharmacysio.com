@@ -9,7 +9,7 @@ import {MdOutlineCreateNewFolder,MdOutlineAddShoppingCart} from "react-icons/md"
 import {BsFillPatchQuestionFill,BsChevronDown} from "react-icons/bs"
 import {FaUsersCog,FaBars} from "react-icons/fa"
 import {GrUserAdmin} from "react-icons/gr"
-
+import { useNavigate } from "react-router-dom";
 import {
   Popover,
   PopoverTrigger,
@@ -22,9 +22,12 @@ import {
   PopoverAnchor,
   Button,
 } from "@chakra-ui/react";
-
+import { useDispatch, useSelector } from "react-redux";
+import {logOut} from "../../redux/authreducer/action"
 export const Navbar = () => {
   const [mobail,setmobail]=useState(false)
+  const navigate=useNavigate()
+  const dispatch = useDispatch();
   return (
     <>
       <div className="Navbar">
@@ -37,7 +40,7 @@ export const Navbar = () => {
         <Link  to="/addproduct" className="allnavlink"><MdOutlineCreateNewFolder/><p>Addproduct</p> </Link>
         <Link  to="/order" className="allnavlink"><MdOutlineAddShoppingCart/><p>Order</p> </Link>
         <Link  to="/" className="allnavlink"><BsFillPatchQuestionFill/><p>F&Qs</p> </Link>
-        <Link  to="/admininfo" className="allnavlink"><FaUsersCog/><p>Users</p> </Link>
+        <Link  to="/users" className="allnavlink"><FaUsersCog/><p>Users</p> </Link>
        
         </div>
         <p className="opupbtn" onClick={()=>setmobail(!mobail)}><FaBars/></p>
@@ -51,8 +54,8 @@ export const Navbar = () => {
               <PopoverCloseButton />
               <PopoverHeader>Manage Acount </PopoverHeader>
               <PopoverBody>
-               <p>Profile</p>
-               <p>Logout</p>
+               <p onClick={()=>navigate("/admininfo")} className="profilebtn">Profile</p>
+               <p onClick={()=>dispatch(logOut())} className="profilebtn">Logout</p>
               </PopoverBody>
             </PopoverContent>
           </Popover>

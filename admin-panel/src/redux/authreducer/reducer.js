@@ -27,8 +27,6 @@ export const reducer = (oldState = initialstate, action) => {
         isAuthLoading: false,
         token: payload.token,
         isAuth: true,
-        cart_item: [...oldState.cart_item, ...payload.User.cartitem],
-        labtest_item: [...oldState.labtest_item, ...payload.User.labtest_items],
         admindata: payload.User,
       };
       

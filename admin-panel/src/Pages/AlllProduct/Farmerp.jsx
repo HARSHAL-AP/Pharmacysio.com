@@ -1,54 +1,54 @@
 import React, { useState, useEffect } from "react";
 import { Navbar } from "../../Components/Navbar/Navbar";
 import {
-  Table,
-  Thead,
-  Tbody,
-  Tfoot,
-  Tr,
-  Th,
-  Td,
-  TableCaption,
-  TableContainer,
-  Button,
-} from "@chakra-ui/react";
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,FormControl,FormLabel,Input
-} from '@chakra-ui/react'
-import { useDisclosure } from '@chakra-ui/react'
-import { useDispatch, useSelector } from "react-redux";
-import {
-  getProductorders,
-  getLabtestorders,
-} from "../../redux/rpoductreducer/action";
+    Table,
+    Thead,
+    Tbody,
+    Tfoot,
+    Tr,
+    Th,
+    Td,
+    TableCaption,
+    TableContainer,
+    Button,
+  } from "@chakra-ui/react";
+  import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,FormControl,FormLabel,Input
+  } from '@chakra-ui/react'
+  import { useDisclosure } from '@chakra-ui/react'
+  import { useDispatch, useSelector } from "react-redux";
+  import {
+    getProductorders,
+    getLabtestorders,
+  } from "../../redux/rpoductreducer/action";
+  
+export const Farmerp = () => {
+    const { isOpen, onOpen, onClose } = useDisclosure()
 
-export const Order = () => {
-  const { isOpen, onOpen, onClose } = useDisclosure()
-
-  const initialRef = React.useRef(null)
-  const finalRef = React.useRef(null)
-  const dispatch = useDispatch();
-  const Productorders = useSelector(
-    (store) => store.Productreducer.Productorders
-  );
-  const labtestorde = useSelector(
-    (store) => store.Productreducer.labtestorders
-  );
-
-  useEffect(() => {
-    if (Productorders.length === 0) {
-      dispatch(getProductorders());
-    }
-    if (labtestorde.length === 0) {
-      dispatch(getLabtestorders());
-    }
-  }, [Productorders.length, labtestorde.length]);
+    const initialRef = React.useRef(null)
+    const finalRef = React.useRef(null)
+    const dispatch = useDispatch();
+    const Productorders = useSelector(
+      (store) => store.Productreducer.Productorders
+    );
+    const labtestorde = useSelector(
+      (store) => store.Productreducer.labtestorders
+    );
+  
+    useEffect(() => {
+      if (Productorders.length === 0) {
+        dispatch(getProductorders());
+      }
+      if (labtestorde.length === 0) {
+        dispatch(getLabtestorders());
+      }
+    }, [Productorders.length, labtestorde.length]);
   return (
     <>
       <Navbar />
@@ -124,5 +124,5 @@ export const Order = () => {
         </Table>
       </div>
     </>
-  );
-};
+  )
+}

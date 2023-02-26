@@ -60,15 +60,15 @@ export const Allproduct = () => {
          <h1> All Products</h1>
      </div>
     <div className="catecontene">
-       <Button onClick={()=>setcategory("covidessentials")}>Covid Essentials</Button>
-       <Button onClick={()=>setcategory("personalcare")}>Helthcares</Button>
-       <Button onClick={()=>setcategory("mother_and_baby_care")}>Baby& Mother care</Button>
-       <Button onClick={()=>setcategory("sexual_wellness")}>Sexual Wellness</Button>
-       <Button onClick={()=>setcategory("diabetic_care")}>Dibetics</Button>
-       <Button onClick={()=>setcategory("skincare")}>Skincare</Button>
-       <Button onClick={()=>setcategory("homecare")}>Home care</Button>
-       <Button onClick={()=>setcategory("ayurveduc_care")}>Ayurvedic</Button>
-       <Button onClick={()=>setcategory("healty_food_and_drinks")}>Healty Food and Drinks</Button>
+       <Button onClick={()=>setcategory("covidessentials")} bg="pink.200">Covid Essentials</Button>
+       <Button onClick={()=>setcategory("personalcare")} bg="pink.200">Helthcares</Button>
+       <Button onClick={()=>setcategory("mother_and_baby_care")} bg="pink.200">Baby& Mother care</Button>
+       <Button onClick={()=>setcategory("sexual_wellness")} bg="pink.200">Sexual Wellness</Button>
+       <Button onClick={()=>setcategory("diabetic_care")} bg="pink.200">Dibetics</Button>
+       <Button onClick={()=>setcategory("skincare")} bg="pink.200">Skincare</Button>
+       <Button onClick={()=>setcategory("homecare")} bg="pink.200">Home care</Button>
+       <Button onClick={()=>setcategory("ayurveduc_care")} bg="pink.200">Ayurvedic</Button>
+       <Button onClick={()=>setcategory("healty_food_and_drinks")} bg="pink.200">Healty Food and Drinks</Button>
        
     </div>
       <div className="tbconter">
