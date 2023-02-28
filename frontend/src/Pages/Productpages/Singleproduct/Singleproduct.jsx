@@ -10,12 +10,10 @@ import { useDispatch } from "react-redux";
 import { MenuItem } from "@chakra-ui/react";
 
 export const Singleproduct = () => {
-  const dispatch=useDispatch()
+  const dispatch = useDispatch();
   const [data, setdata] = useState({});
-  const [item,setitem]=useState({
-    
-  })
-  const [Count,setCount]=useState(1)
+  const [item, setitem] = useState({});
+  const [Count, setCount] = useState(1);
   let { id } = useParams();
   useEffect(() => {
     axios
@@ -27,12 +25,12 @@ export const Singleproduct = () => {
         console.log(e);
       });
   }, []);
-  const Handleadd=()=>{
-  let item={...data,"quantity":Count}
-  console.log(item)
-  dispatch(addtocart(item))
- alert("Product Added to cart....")
-  }
+  const Handleadd = () => {
+    let item = { ...data, quantity: Count };
+    console.log(item);
+    dispatch(addtocart(item));
+    alert("Product Added to cart....");
+  };
 
   return (
     <>
@@ -44,29 +42,37 @@ export const Singleproduct = () => {
         <div className="decscbody-sing1">
           <h1 className="protitle">{data.title}</h1>
           <div className="ratingstars">
-            
-              <FaStar />
-            
+            <FaStar />
+
             <p>{Math.floor(data.rating)} Ratings </p>
           </div>
 
           <h1 className="salpirce">
-            ₹{data.saleprice||data.Saleprice} <span>(Inclusive of all taxes )</span>
+            ₹{data.saleprice || data.Saleprice}{" "}
+            <span>(Inclusive of all taxes )</span>
           </h1>
           <div className="discountoff">
-          <h1 className="mrpprice">MRP ₹ {data.price} </h1><span>{data.discount} % OFF</span>
-            </div>
-         <div className="qtyadjuster">
-         <button onClick={()=>setCount(Count-1)} disabled={Count == 1 ? true : false}>-</button>
-          
-          <p>{Count}</p>
-          <button onClick={()=>setCount(Count+1)}>+</button>
-         </div>
-          <button className="addtocartbtn" onClick={Handleadd}>Add To Cart</button>
+            <h1 className="mrpprice">MRP ₹ {data.price} </h1>
+            <span>{data.discount} % OFF</span>
+          </div>
+          <div className="qtyadjuster">
+            <button
+              onClick={() => setCount(Count - 1)}
+              disabled={Count == 1 ? true : false}
+            >
+              -
+            </button>
+
+            <p>{Count}</p>
+            <button onClick={() => setCount(Count + 1)}>+</button>
+          </div>
+          <button className="addtocartbtn" onClick={Handleadd}>
+            Add To Cart
+          </button>
         </div>
       </div>
 
       <Fotter />
     </>
-  ); 
+  );
 };
