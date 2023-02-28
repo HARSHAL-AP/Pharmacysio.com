@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 import "./Singleitem1.css"
 import { useNavigate } from "react-router-dom";
 import { AiOutlineFileAdd } from "react-icons/ai";
@@ -19,7 +19,7 @@ export const Singleitem1 = ({obj}) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const finalRef = React.useRef(null)
   const data=useSelector((store)=>store.Productreducer.isLoading)
-
+  const [Count,setCount]=useState(1)
    const Handljump=(id)=>{
     navigate(`/Singleproduct/${id}`)
    }
@@ -50,22 +50,39 @@ export const Singleitem1 = ({obj}) => {
         <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
-          <ModalHeader>{obj.title}</ModalHeader>
-          <ModalCloseButton />
+          
+          
           <ModalBody>
-            <div>
-            <img src={obj.image} alt="" />
-            </div>
+          <div className="cardbody" onClick={onOpen}>
          
+         <div className="imgb">
+           <img src={obj.image} alt="" />
+         </div>
+         <div className="datab">
+           <h1 className="cardheading">{obj.title}</h1>
+           <p className="prequire"><AiOutlineFileAdd className="cardconi"/>{obj.prescription_required?"Prescription Required":"Prescription Not Required"}</p>
            
+           <div className="pricecard">
+             <p>MRP ₹{obj.price}</p> 
+           </div>
+           <div className="qtyadjuster">
+         <button onClick={()=>setCount(Count-1)} disabled={Count == 1 ? true : false}>-</button>
+          
+          <p>{Count}</p>
+          <button onClick={()=>setCount(Count+1)}>+</button>
+         </div>
+         </div>
+       </div>
           </ModalBody>
 
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}>
-              Close
+          <ModalFooter m="auto" alignItems="center" justifyContent="space-between" w="400px">
+         
+            <Button colorScheme='green' mr={3} onClick={onClose}>
+              Add To Cart
             </Button>
-            <Button variant='ghost'>Secondary Action</Button>
+            
           </ModalFooter>
+          
         </ModalContent>
       </Modal>
       </>
