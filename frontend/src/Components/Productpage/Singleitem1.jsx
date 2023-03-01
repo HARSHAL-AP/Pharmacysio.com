@@ -23,6 +23,17 @@ import { useDisclosure } from "@chakra-ui/react";
 export const Singleitem1 = ({ obj }) => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
+  const finalRef = React.useRef(null)
+  const data=useSelector((store)=>store.Productreducer.isLoading)
+  const cartdata=useSelector((store)=>store.Productreducer.cart_item)
+  const [Count,setCount]=useState(1)
+   const Handljump=(id)=>{
+    navigate(`/Singleproduct/${id}`)
+   }
+   if(data){
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   const finalRef = React.useRef(null);
   const data = useSelector((store) => store.Productreducer.isLoading);
@@ -43,6 +54,7 @@ export const Singleitem1 = ({ obj }) => {
     //});
   };
   if (data) {
+
     return (
       <div className="cardbody">
         <img src={Loder} alt="" className="loder" />
