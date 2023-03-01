@@ -19,6 +19,7 @@ export const Singleitem1 = ({obj}) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const finalRef = React.useRef(null)
   const data=useSelector((store)=>store.Productreducer.isLoading)
+  const cartdata=useSelector((store)=>store.Productreducer.cart_item)
   const [Count,setCount]=useState(1)
    const Handljump=(id)=>{
     navigate(`/Singleproduct/${id}`)
