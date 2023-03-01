@@ -24,7 +24,7 @@ export const Cart = () => {
       document.getElementById("cartbody").style.display="block"
       let t = 0;
     for (let i = 0; i < data.length; i++) {
-      t += data[i].price;
+      t += data[i].price*data[i].quantity;
     }
     setSubtotal(t);
     }

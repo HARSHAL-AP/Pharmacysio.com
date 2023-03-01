@@ -29,7 +29,7 @@ export const Singlitem = ({ el }) => {
             </div>
             <div className="qtybody">
               
-              <h1>{count}</h1>
+              <h1>{el.quantity}</h1>
               
             </div>
           </div>

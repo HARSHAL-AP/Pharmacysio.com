@@ -18,7 +18,7 @@ import {
 } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
 import { useToast } from "@chakra-ui/react";
-import { addtocart } from "../../Redux/authreducer/action";
+import { addtocart,updatetocart,deletocart } from "../../Redux/authreducer/action";
 import { useDisclosure } from "@chakra-ui/react";
 export const Singleitem1 = ({ obj }) => {
   const dispatch = useDispatch();
@@ -27,31 +27,46 @@ export const Singleitem1 = ({ obj }) => {
   const { isOpen, onOpen, onClose } = useDisclosure()
   const finalRef = React.useRef(null)
   const data=useSelector((store)=>store.Productreducer.isLoading)
-  const cartdata=useSelector((store)=>store.Productreducer.cart_item)
+  const cartdata=useSelector((store)=>store.Authreducer.cart_item)
   const [Count,setCount]=useState(1)
+  const toast = useToast();
+  
    const Handljump=(id)=>{
     navigate(`/Singleproduct/${id}`)
    }
-   if(data){
-
-  const { isOpen, onOpen, onClose } = useDisclosure();
-  const finalRef = React.useRef(null);
-  const data = useSelector((store) => store.Productreducer.isLoading);
-  const [Count, setCount] = useState(1);
-  const toast = useToast();
-  const Handljump = (id) => {
-    navigate(`/Singleproduct/${id}`);
-  };
+  
+  
+ 
   const Handleadd = () => {
-    //let item = { ...obj, quantity: Count };
-    //console.log(item);
-    //dispatch(addtocart(item));
-    //onClose();
-    //toast({
-    //  title: `Item Added To cart...`,
-    //  status: "success",
-    //  isClosable: true,
-    //});
+ 
+   let check=cartdata.filter((el)=> el._id===obj._id)
+   if(check.length===0){
+    let item = { ...obj, quantity: Count };
+    console.log(item);
+    dispatch(addtocart(item));
+    onClose();
+    toast({
+      title: `Item Added To cart...`,
+      status: "success",
+      isClosable: true,
+    });
+   }
+   else{
+   
+    let item = { ...obj, quantity:check[0].quantity+Count };
+    
+    dispatch(updatetocart(item));
+    onClose();
+    toast({
+      title: `Item Added To cart...`,
+      status: "success",
+      isClosable: true,
+    });
+   }
+  
+
+
+    
   };
   if (data) {
 
@@ -132,3 +147,4 @@ export const Singleitem1 = ({ obj }) => {
     );
   }
 };
+
